@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/minzharge/static/css/main.2c9936ba.css",
+    "main.js": "/minzharge/static/js/main.3fb388c4.js",
+    "static/media/image1.jpg": "/minzharge/static/media/image1.43868b1932cf02291413.jpg",
+    "static/media/photo-1588580000645-4562a6d2c839.jpeg": "/minzharge/static/media/photo-1588580000645-4562a6d2c839.8c7c54768a217ef8022b.jpeg",
+    "static/media/8314929977_28fd740070_b.jpg": "/minzharge/static/media/8314929977_28fd740070_b.842410bed17eff622b5d.jpg",
+    "static/media/pic-web1.jpg": "/minzharge/static/media/pic-web1.6d1d9ab16b18f1ed613c.jpg",
+    "index.html": "/minzharge/index.html",
+    "main.2c9936ba.css.map": "/minzharge/static/css/main.2c9936ba.css.map",
+    "main.3fb388c4.js.map": "/minzharge/static/js/main.3fb388c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c9936ba.css",
+    "static/js/main.3fb388c4.js"
+  ]
+}

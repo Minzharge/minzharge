@@ -1,0 +1,111 @@
+/* ==========================================================================
+      Start of custom Webflow CSS
+      ========================================================================== */
+
+table tbody tr td {
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media screen and (max-width: 1024px) {
+    .specifications-grid {
+        margin-bottom: 20px;
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.w-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+
+.specifications-grid {
+    margin-bottom: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.specification-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.car-image {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.car-icons {
+    width: 30px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.car-specifications-titles {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.specification-container img {
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 768px) {
+    .specifications-grid {
+        font-size: 12px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-bottom: 5px;
+        margin: 0px 100px;
+        text-align: center;
+    }
+    .car-icons {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .specifications-grid {
+        font-size: 12px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-bottom: 5px;
+        margin: 5px;
+    }
+    .car-icons {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #w-node-_16fa6136-9512-9778-ccc5-febbdcc4a98a-e17b58f6 {
+        -webkit-box-ordinal-group: 10000;
+        -webkit-order: 9999;
+        -ms-flex-order: 9999;
+        order: 9999;
+    }
+}
