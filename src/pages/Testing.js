@@ -53,4 +53,4 @@ const Testing = () => {
   );
 };
  
-export default Testing
+export default Testing;
