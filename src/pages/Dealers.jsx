@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {useParams, Link} from 'react-router-dom'
 import image from './pic-web1.jpg'
 import image1 from './image1.jpg'
+import axios from 'axios';
 
 
 
@@ -23,8 +24,39 @@ return (
 
 function Dealers() {
   const [clamp, setClamp] = useState(false)
+  const [inputs, setInputs] = useState({
+    dealers_page:'',
+    first_name:'',
+    last_name:'',
+    email: '',
+    phone:'',
+    text_message:''
+ })
+ const printValues = (e) => {
+  e.preventDefault();
+  const content = {
+     question: inputs.dealers_page,
+     first_name: inputs.first_name,
+     last_name: inputs.dealers_page,
+     email:inputs.email,
+     phone : inputs.phone,
+     text_message : inputs.text_message
+
+  }
+  axios.post('http://localhost:5002/api/v1/mail/dealers_mail/add' , content)
+  .then( res =>{
+    alert(res)
+  })
+};
+ const updatedField = (e) =>{
+  setInputs({
+    ...inputs,
+    [e.target.name] : e.target.value
+  })
+ }
   return (
-    <><div className="">
+    <>
+    <div className="">
 
      {/* <div
   class="px-4 pt-12 mx-0 mt-0 mb-4 w-full text-3xl font-bold leading-[3rem] text-black md:text-5xl  md:px-0 md:pt-24  text-left  bg-cover h-screen bg-[url('https://img.freepik.com/free-photo/happy-professional-asian-female-manager-businesswoman-suit-showing-announcement-smiling-pointing-finger-left-product-project-banner-standing-white-background_1258-69508.jpg?w=996&t=st=1667804260~exp=1667804860~hmac=ebf4c267cea2817acf3e35a49383c4ca4b62b8b8e26d9a529bff1b34db79842f')] bg-no-repeat "
@@ -97,11 +129,6 @@ function Dealers() {
    
     </div>
 
-
-
-
-
-
     <div className="">
         <div className="">
           <div ><div className="text-3xl font-semibold leading-none pl-16 relative text-black mb-8 mt-24 before:left-0 before:top-4 before:inline-block before:w-16 before:h-px before:bg-gray-400 before:absolute ">CONTACT US </div> </div>
@@ -109,7 +136,7 @@ function Dealers() {
       </div>
 
 
-
+<form action="" onSubmit={printValues}>
 <section
   class="flex relative flex-col   mt-16 leading-6 text-black lg:flex-row  mb-20"
   
@@ -122,15 +149,17 @@ function Dealers() {
                     <option value="Other" className="form-control">Other</option>
                   </select> */}
                    <label htmlFor="inputName" class="leading-8 "/>
-                  <input type="text" className=" w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem]  focus:border-b-2 " name="name" placeholder="*Dealers Page" id="inputName" />
+                  <input type="text" className=" w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white 
+                  rounded-none leading-[4rem]  focus:border-b-2 " name="dealers_page" value={inputs.dealers_page} onChange={updatedField} placeholder="*Dealers Page" id="inputName" />
                   <label htmlFor="inputName" class="leading-8 "/>
-                  <input type="text" className=" w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem]  focus:border-b-2 " name="name" placeholder="*First name" id="inputName" />
+                  <input type="text" className=" w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem]  focus:border-b-2 " name="first_name"
+                  value={inputs.first_name} onChange={updatedField}  placeholder="*First name" id="inputName" />
                    <label htmlFor="inputName" class="leading-8 "/>
-                  <input type="text" className=" w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem]  focus:border-b-2 " name="name" placeholder="*Last name" id="inputName" />
+                  <input type="text" className=" w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem]  focus:border-b-2 " name="last_name"  value={inputs.last_name} onChange={updatedField}  placeholder="*Last name" id="inputName" />
                   <label htmlFor="inputEmail" />
-                  <input type="email" className="  w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem] focus:border-none" name="email" placeholder="*Email" id="inputEmail" />
+                  <input type="email" className="  w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem] focus:border-none" name="email"  value={inputs.email} onChange={updatedField}  placeholder="*Email" id="inputEmail" />
                   <label htmlFor="inputNumber" />
-                  <input type="text" className="mb-4 w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem] focus:border-none" name="phone" placeholder="*Phone" id="inputNumber" /> 
+                  <input type="text" className="mb-4 w-full border-b-2 block w-full pt-1 pr-3 text-lg bg-white rounded-none leading-[4rem] focus:border-none" name="phone"  value={inputs.phone} onChange={updatedField} placeholder="*Phone" id="inputNumber" /> 
                   
                 </div>
 <div
@@ -138,14 +167,14 @@ function Dealers() {
 >
 <div className="form-group col-md-6 relative ">
                   
-                  <textarea className="form-control1  w-full leading-[3.8rem] border-2 pt-1 pr-3 text-lg bg-white rounded-none  focus:border-none" rows={5} placeholder="*how can we help you?" id="inputMessage" defaultValue={""} />
+                  <textarea className="form-control1  w-full leading-[3.8rem] border-2 pt-1 pr-3 text-lg bg-white rounded-none  focus:border-none" rows={5} name="text_message"  value={inputs.text_message} onChange={updatedField} placeholder="*how can we help you?" id="inputMessage" defaultValue={""} />
                   <label htmlFor="inputNumber" />
                   <button type="submit" className="btn btn-primary button-contact text-center border border-green w-full leading-[2rem] text-[#56cb5b] border-[#56cb5b] rounded" ><div class="border-green-500 text-center">Submit</div></button>
                 </div>
 </div>
 
 </section>
-
+</form>
 
     </>
   )

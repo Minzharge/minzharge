@@ -16,7 +16,7 @@ const Testing = () => {
        desc:desc
     }
     e.preventDefault();
-   axios.post("http://localhost:5002/api/v1/mail/contact_mail/add",user)
+   axios.post("http://localhost:5002/api/v1/mail/investors_mail/add",user)
    .then(response => 
     alert(response)
     );
