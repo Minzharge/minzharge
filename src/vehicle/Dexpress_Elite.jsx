@@ -219,7 +219,7 @@ function Dexpress_Elite() {
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Range.png"}class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Range</div>
-                                    <div>100 km</div>
+                                    <div>Upto 120 kms</div>
                                 </div>
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
@@ -229,9 +229,9 @@ function Dexpress_Elite() {
                                 </div>
 
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/trolley-push-cart-with-boxes-svgrepo-com.svg"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Loading Capacity</div>
+                                    <div className="car-specifications-titles">Capacity</div>
                                     <div>200 Kgs</div>
                                 </div>
                             </div>
@@ -320,27 +320,24 @@ function Dexpress_Elite() {
 
     <div className='my-10'>
         <h3 className='font-sans text-xl mb-8 font-bold'>Colors</h3>
-        <div className='flex justify-around flex-wrap gap-5'>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-red-500'></div>
-                <div className=''>Red</div>
-            </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-Black'></div>
-                <div className=''>Black</div>
-            </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-blue-500'></div>
-                <div className=''>Black</div>
-            </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-yellow-500'></div>
+        <div className='flex justify-left lg:justify-around flex-wrap gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-yellow-300'></div>
                 <div className=''>Yellow</div>
             </div>
-			<div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-maroon'></div>
-                <div className=''>Orange</div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-red-700'></div>
+                <div className=''>Maroon</div>
             </div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-blue-500'></div>
+                <div className=''>Blue</div>
+            </div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-black'></div>
+                <div className=''>Black</div>
+            </div>
+			
 			
         </div>
     </div>

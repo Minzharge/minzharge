@@ -220,23 +220,23 @@ function Semzy_Kasa_Smart() {
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Reverse Mode.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Top Speed</div>
-                                    <div>35 Kmph</div>
+                                    <div>City Limit</div>
                                 </div>
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Range.png"}class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Range</div>
-                                    <div>60km</div>
+                                    <div>Upto 75km</div>
                                 </div>
                             </div>
-                            <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
+                                            <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Braking</div>
-                                    <div>E-ABS</div>
+                                    <div className="car-specifications-titles">Charge</div>
+                                    <div>3-4 Hrs</div>
                                 </div>
 
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Anti Theft Alaram.png"}class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles" style={{'textAlign':'left'}} >Feature</div>
                                     <div style={{'textAlign':'left'}}>Anti Theft Alarm</div>
@@ -321,17 +321,17 @@ function Semzy_Kasa_Smart() {
 
     <div className='my-10'>
         <h3 className='font-sans text-xl mb-8 font-bold'>Colors</h3>
-        <div className='flex justify-around flex-wrap gap-5'>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-red-500'></div>
+        <div className='flex justify-left lg:justify-around flex-wrap gap-5'>
+            <div className='flex gap-5 w-[50%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-red-500'></div>
                 <div className=''>Silver with Red</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-green-500'></div>
+            <div className='flex gap-5 w-[50%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-green-500'></div>
                 <div className=''>Silver with Green</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-blue-500'></div>
+            <div className='flex gap-5 w-[50%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-blue-500'></div>
                 <div className=''>Silver with Blue</div>
             </div>
             

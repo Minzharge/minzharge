@@ -194,7 +194,7 @@ function Gemopai_astrid_lite() {
                             <div className="specification-container"> <img src={assetUrl + "/Key_highlights_icon/battery.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Battery</div>
-                                    <div>LiFePO4</div>
+                                    <div>Li-ion</div>
                                 </div>
                             </div>
                             <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Top Speed.png"} alt="cad" class="car-icons"/>
@@ -206,26 +206,26 @@ function Gemopai_astrid_lite() {
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Reverse Mode.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Top Speed</div>
-                                    <div>25 Kmph</div>
+                                    <div>65 Km/Hr</div>
                                 </div>
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Range.png"}class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Range</div>
-                                    <div>120km</div>
+                                    <div>150 + kms</div>
                                 </div>
                             </div>
-                            <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
+                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Technology</div>
-                                    <div>Smart Ai</div>
+                                    <div className="car-specifications-titles">Power</div>
+                                    <div>2.4KW </div>
                                 </div>
 
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/trolley-push-cart-with-boxes-svgrepo-com.svg"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles"  style={{'textAlign':'left'}}>Loading Capacity</div>
-                                    <div  style={{'textAlign':'left'}}>200 Kgs</div>
+                                    <div className="car-specifications-titles">Capacity</div>
+                                    <div>150 Kgs</div>
                                 </div>
                             </div>
                            
@@ -299,25 +299,25 @@ function Gemopai_astrid_lite() {
 
     <div className='my-10'>
         <h3 className='font-sans text-xl mb-8 font-bold'>Colors</h3>
-        <div className='flex justify-around flex-wrap gap-5'>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-red-500'></div>
+        <div className='flex justify-left lg:justify-around flex-wrap gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-red-500'></div>
                 <div className=''>Fiery Red</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-green-500'></div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-orange-500'></div>
                 <div className=''>Fireball Orange</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-blue-500'></div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-black'></div>
                 <div className=''>Burnt Charcol</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-yellow-500'></div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-indigo-500'></div>
                 <div className=''>Deep Indigo</div>
             </div>
-			 <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-yellow-500'></div>
+			 <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-yellow-500'></div>
                 <div className=''>Electric Neon</div>
             </div>
         </div>

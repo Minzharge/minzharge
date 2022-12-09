@@ -1,37 +1,7 @@
-import axios from 'axios';
-import React, { useState } from 'react';
+import React from 'react'
 
-function Investors() {
-   
-    const [inputs, setInputs] = useState({
-        first_name:'', 
-        last_name:'',
-        email:'',
-        phone:'', 
-        text_message:''
-     })
-     const printValues = (e) => {
-      e.preventDefault();
-      const content = {
-         first_name: inputs.first_name,
-         last_name: inputs.last_name,
-         email:inputs.email,
-         phone : inputs.phone,
-         text_message : inputs.text_message
-    
-      }
-      console.log(content)
-      axios.post('http://localhost:5002/api/v1/mail/investors_mail/add' , content)
-      .then( res =>{
-        alert(res)
-      })
-    };
-     const updatedField = (e) =>{
-      setInputs({
-        ...inputs,
-        [e.target.name] : e.target.value
-      })
-     }
+function investors() {
+	
     return (
         <div>
             <div class="grid md:grid-cols-2 gap-5 mx-[10%] my-[3%] sm:grid-cols-2 xs:grid-cols-1">
@@ -182,19 +152,19 @@ function Investors() {
             </div>
 
             <div className='py-20 md:px-80 xs:px-0 bg-slate-600 place-items-center'>
-                <form class="w-full  overflow-x-hidden" onSubmit={printValues}>
+                <form class="w-full  overflow-x-hidden">
                     <div class="flex flex-wrap  bg-slate-600 pb-6">
                         <div class="w-full md:w-1/2 px-3">
 
                             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
         rounded py-3 px-4 mb-3 leading-tight focus:outline-none
-        focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" name='first_name' value={inputs.first_name} onChange={updatedField}></input>
+        focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"></input>
                         </div>
                         <div class="w-full md:w-1/2 px-3">
 
                             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
        border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white
-        focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" name='last_name' value={inputs.last_name} onChange={updatedField} />
+        focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
                         </div>
                     </div>
                     <div class="flex flex-wrap  bg-slate-600 pb-6">
@@ -202,18 +172,18 @@ function Investors() {
 
                             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
       rounded py-3 px-4 mb-3 leading-tight focus:outline-none
-        focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" name='email' value={inputs.email} onChange={updatedField}></input>
+        focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"></input>
                         </div>
                         <div class="w-full md:w-1/2 px-3">
 
                             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
        border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white
-        focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" name='phone' value={inputs.phone} onChange={updatedField}/>
+        focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
                         </div>
                     </div>
                     <div class="w-full px-3">
 
-                        <textarea class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" name='text_messgae' value={inputs.text_messgae} onChange={updatedField} rows="4"></textarea>
+                        <textarea class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" rows="4"></textarea>
 
                     </div><br/>
                     <div class="flex flex-col justify-center items-center">
@@ -229,4 +199,4 @@ function Investors() {
     )
 }
 
-export default Investors
+export default investors

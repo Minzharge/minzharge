@@ -212,7 +212,7 @@ function Gemopai_ryder() {
                             <div className="specification-container"> <img src={assetUrl + "/Key_highlights_icon/battery.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Battery</div>
-                                    <div>LiFePO4</div>
+                                    <div>Li-ion</div>
                                 </div>
                             </div>
                             <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Top Speed.png"} alt="cad" class="car-icons"/>
@@ -224,26 +224,26 @@ function Gemopai_ryder() {
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Reverse Mode.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Top Speed</div>
-                                    <div>25 Kmph</div>
+                                    <div>City Limit</div>
                                 </div>
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Range.png"}class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Range</div>
-                                    <div>120km</div>
+                                    <div>Upto 100 kms</div>
                                 </div>
                             </div>
-                            <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
+                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Technology</div>
-                                    <div>Smart Ai</div>
+                                    <div className="car-specifications-titles">Charge</div>
+                                    <div>4-5 Hrs</div>
                                 </div>
 
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/trolley-push-cart-with-boxes-svgrepo-com.svg"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles"  style={{'textAlign':'left'}}>Loading Capacity</div>
-                                    <div  style={{'textAlign':'left'}}>200 Kgs</div>
+                                    <div className="car-specifications-titles">Capacity</div>
+                                    <div>150 Kgs</div>
                                 </div>
                             </div>
                            
@@ -331,26 +331,26 @@ function Gemopai_ryder() {
 
     <div className='my-10'>
         <h3 className='font-sans text-xl mb-8 font-bold'>Colors</h3>
-        <div className='flex justify-around flex-wrap gap-5'>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-red-500'></div>
-                <div className=''>Charcol Grey</div>
-            </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-green-500'></div>
-                <div className=''>Glossy White</div>
-            </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-blue-500'></div>
+        <div className='flex justify-left lg:justify-around flex-wrap gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-blue-500'></div>
                 <div className=''>Sapphire Blue</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-yellow-500'></div>
-                <div className=''>Imperial Red</div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-gray-500'></div>
+                <div className=''>Charcoal Grey</div>
             </div>
-			<div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-yellow-500'></div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-white-500'></div>
+                <div className=''>Glossy White</div>
+            </div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-yellow-300'></div>
                 <div className=''>Ivory Gold</div>
+            </div>
+			<div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-red-500'></div>
+                <div className=''>Imperial Red</div>
             </div>
         </div>
     </div>

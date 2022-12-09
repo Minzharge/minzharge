@@ -66,18 +66,17 @@ import AmpVConnect_AC from "./Chargers/AmpVConnect_AC";
 
 import Footer from "./components/Footer"
 import { NavbarContext } from './context/NavbarStatus';
-import Investors from './investors/Investors'
+
 import BlogsList from './Blogs/Blogs_list'
 import BlogContextProvider from './context/BlogContext'
- 
+
+import Investors from './investors/investors'
 //details
-import Privacy from "./details/privacyandpolicy"; 
+import Privacy from "./details/privacyandpolicy";
 import Cookies from "./details/cookiesandpolicy";
 import Terms from "./details/termsandconditions";
 import Refund from "./details/refundandcancellationpolicy";
 
-///Testing page
-import Testing from "./pages/Testing"
 const App = () => {
     const [expand, setExpand] = useState(false)
     const homePath = process.env.NODE_ENV === 'production' ? '/minzharge': '/';
@@ -172,9 +171,6 @@ const App = () => {
                      <Route path="details/cookiesandpolicy" element={<Cookies/>}></Route>
                      <Route path="details/termsandconditions" element={<Terms/>}></Route>
                      <Route path="details/refundandcancellationpolicy" element={<Refund/>}> </Route>
-
-                     {/* testing router */}
-                     <Route path="testing" element={<Testing/>}></Route>
 				    </Routes>
 				
 				<BlogContextProvider>

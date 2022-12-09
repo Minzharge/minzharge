@@ -212,11 +212,11 @@ function BattReLoEv() {
 					  <option value="lead1">90 Km</option>
                       </select>
             </div>
-             <div className="w-layout-grid specifications-grid">
+               <div className="w-layout-grid specifications-grid">
                             <div className="specification-container"> <img src={assetUrl + "/Key_highlights_icon/battery.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Battery</div>
-                                    <div>LiFePO4</div>
+                                    <div>Li-ion</div>
                                 </div>
                             </div>
                             <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Top Speed.png"} alt="cad" class="car-icons"/>
@@ -228,26 +228,26 @@ function BattReLoEv() {
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Reverse Mode.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Top Speed</div>
-                                    <div>25 Kmph</div>
+                                    <div>City Limit</div>
                                 </div>
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Range.png"}class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Range</div>
-                                    <div>120km</div>
+                                    <div>50-75 kms</div>
                                 </div>
                             </div>
-                            <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
+                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Technology</div>
-                                    <div>Smart Ai</div>
+                                    <div className="car-specifications-titles">Charge</div>
+                                    <div>3-4 Hrs</div>
                                 </div>
 
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/trolley-push-cart-with-boxes-svgrepo-com.svg"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles" style={{'textAlign':'left'}}>Loading Capacity</div>
-                                    <div style={{'textAlign':'left'}}>200 Kgs</div>
+                                    <div className="car-specifications-titles">Capacity</div>
+                                    <div>150 Kgs</div>
                                 </div>
                             </div>
                            
@@ -335,34 +335,34 @@ function BattReLoEv() {
 
     <div className='my-10'>
         <h3 className='font-sans text-xl mb-8 font-bold'>Colors</h3>
-        <div className='flex justify-around flex-wrap gap-5'>
-            <div className='flex gap-5'>
+        <div className='flex justify-left lg:justify-around flex-wrap gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto '>
                 <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-red-500'></div>
                 <div className=''>Red</div>
             </div>
-			<div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-gray-500'></div>
-                <div className=''>Grey</div>
-            </div>
-            <div className='flex gap-5'>
+			<div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
                 <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-blue-500'></div>
                 <div className=''>Sky Blue</div>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
                 <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-black'></div>
                 <div className=''>Black</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-yellow-300'></div>
-                <div className=''>Yellow</div>
-            </div>
-			<div className='flex gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
                 <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-orange-500'></div>
                 <div className=''>Orange</div>
             </div>
-			<div className='flex gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
                 <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-white-500'></div>
                 <div className=''>White</div>
+            </div>
+			<div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-yellow-300'></div>
+                <div className=''>Yellow</div>
+            </div>
+			<div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-gray-500'></div>
+                <div className=''>Grey</div>
             </div>
 			
         </div>

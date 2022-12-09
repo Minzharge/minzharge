@@ -4,35 +4,7 @@ const assetUrl = process.env.NODE_ENV === 'production' ? '/minzharge/assets/' : 
 
 function AboutUs() {
   const [clamp, setClamp] = useState(false)
-  const [inputs, setInputs] = useState({
-    select:'',
-    first_name:'',
-    email:'',
-    phone:'',
-    text_message:''
- })
- const printValues = (e) => {
-  e.preventDefault();
-  const content = {
-     question: inputs.select,
-     name: inputs.first_name,
-     email:inputs.email,
-     phone : inputs.phone,
-     text_message : inputs.text_message
 
-  }
-  console.log(content)
-  axios.post('http://localhost:5002/api/v1/mail/contact_mail/add' , content)
-  .then( res =>{
-    alert(res)
-  })
-};
- const updatedField = (e) =>{
-  setInputs({
-    ...inputs,
-    [e.target.name] : e.target.value
-  })
- }
   const myStyle = {
     background: 'linear-gradient(rgb(0 0 0 / 65%), #00000085)',
     // `url(${assetUrl + '/Banner/Banner2.jpg'})`,
@@ -158,11 +130,11 @@ function AboutUs() {
            before:bg-black before:inline-block before:relative before:align-middle 
            before:w-1/12 before:right-2   p-4">CONTACT US
         </h1>
-        <form action="" onSubmit={printValues}>
+        <form action="">
           <div className=" w-full px-32 grid xs:grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
             <div className='p-4'>
               <div className="col-span-1 lg:col-span-2">
-                <select  id="type" name="select"value={inputs.select} onChange={updatedField} className='w-full py-2 text-lg text-gray-700 border-b-2 border-gray-300 outline-none my-4'>
+                <select name="" id="type" className='w-full py-2 text-lg text-gray-700 border-b-2 border-gray-300 outline-none my-4'>
                   <option value="austrailia" class="text-gray-700">I want to buy</option>
                   <option value="Malaysia" class="form-control text-gray-700">I have a general question</option>
                   <option value="Malaysia" class="form-control text-gray-700">I want to ask about chargers</option>
@@ -170,27 +142,26 @@ function AboutUs() {
                 </select>
               </div>
               <div className="col-span-1 lg:col-span-2">
-                <input type="text" name="first_name" id="" placeholder='*First Name'
-                value={inputs.first_name} onChange={updatedField} className='w-full my-6 text-lg bg-opacity-50 rounded border-b-2 border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
+                <input type="text" name="" id="" placeholder='*First Name' className='w-full my-6 text-lg bg-opacity-50 rounded border-b-2 border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
   outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'/>
               </div>
               <div className="col-span-1 lg:col-span-2">
-                <input type="text"  id="" placeholder='*Email' name="email" value={inputs.email} onChange={updatedField} className='w-full my-6 text-lg bg-opacity-50 rounded border-b-2 border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
+                <input type="text" name="" id="" placeholder='*Email' className='w-full my-6 text-lg bg-opacity-50 rounded border-b-2 border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
    outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'/>
               </div>
               <div className="col-span-1 lg:col-span-2">
-                <input type="text"  name="phone" value={inputs.phone} onChange={updatedField} id="" placeholder='*Phone' className='w-full my-6  bg-opacity-50 rounded border-b-2 border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
+                <input type="text" name="" id="" placeholder='*Phone' className='w-full my-6  bg-opacity-50 rounded border-b-2 border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
    text-lg outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'/>
               </div>
             </div>
             <div className='p-4'>
-              <textarea id="message"  name="text_message"  value={inputs.text_message} onChange={updatedField}  placeholder="*how can we help you?" className="w-full my-6  bg-opacity-50
+              <textarea id="message" name="message" placeholder="*how can we help you?" className="w-full my-6  bg-opacity-50
                rounded border-2 border-gray-300
    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-60
    text-lg outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out">
               </textarea>
               
-              <button type="submit" className="btn btn-primary button-contact text-center border border-green w-full " style={{ color: '#56cb5b', borderColor: '#56cb5b', backgroundColor: 'transparent', borderRadius: '0.2rem' }}><div class="border-green-500 text-center">hello</div></button>
+            <button class=" w-full text-[#56cb5b] bg-white-500 border-2 py-2 border-[#56cb5b] px-6 focus:outline-none rounded text-lg">Submit</button>
             </div>
 
           </div>

@@ -194,13 +194,13 @@ function Nexzu_Bazinga() {
                             <div className="specification-container"> <img src={assetUrl + "/Key_highlights_icon/battery.png"} class="car-icons"/>
                                 <div>
                                     <div className="car-specifications-titles">Battery</div>
-                                    <div>Li-ion</div>
+                                    <div>Li- ion</div>
                                 </div>
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Top Speed.png"} alt="cad" class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/charging time.png"} alt="cad" class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Speedometer</div>
-                                    <div>Digital</div>
+                                    <div className="car-specifications-titles">Charge</div>
+                                    <div>7-8 Hrs</div>
                                 </div>
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/Reverse Mode.png"} class="car-icons"/>
@@ -217,15 +217,15 @@ function Nexzu_Bazinga() {
                             </div>
                             <div className="specification-container"><img src={assetUrl + "/Key_highlights_icon/fast-charge(1).png"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Wheels</div>
-                                    <div>Alloy</div>
+                                    <div className="car-specifications-titles">Charger</div>
+                                    <div>42V,2A</div>
                                 </div>
 
                             </div>
-                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/Power.png"}class="car-icons"/>
+                            <div className="specification-container" ><img src={assetUrl + "/Key_highlights_icon/tyre.png"}class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Start/Stop</div>
-                                    <div>Keyless</div>
+                                    <div className="car-specifications-titles" style={{'textAlign':'left'}}>Tyre</div>
+                                    <div style={{'textAlign':'left'}}>26" Tubeless</div>
                                 </div>
                             </div>
                            
@@ -298,17 +298,17 @@ function Nexzu_Bazinga() {
 
     <div className='my-10'>
         <h3 className='font-sans text-xl mb-8 font-bold'>Colors</h3>
-        <div className='flex justify-around flex-wrap gap-5'>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-red-500'></div>
+        <div className='flex justify-left lg:justify-around flex-wrap gap-5'>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-red-500'></div>
                 <div className=''>Red</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-yellow-500'></div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-yellow-500'></div>
                 <div className=''>Yellow</div>
             </div>
-            <div className='flex gap-5'>
-                <div className='w-[30px] h-[30px] bg-darkblue-500'></div>
+            <div className='flex gap-5 w-[40%] sm:w-[30%] lg:w-auto'>
+                <div className='w-[30px] h-[30px] rounded border border-slate-400 bg-blue-900'></div>
                 <div className=''>Dark Blue</div>
             </div>           
         </div>
