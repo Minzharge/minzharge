@@ -47,7 +47,7 @@ import Fork_Lifts from "./categories/Fork_Lifts"
 import Loaders from "./categories/Loaders"
 import Scooters from "./categories/Scooters"
 import ReactGA from 'react-ga';
-
+import 'tw-elements';
 //chargers
 import Chargers from "./pages/Chargers";
 import AmpVConnect from "./Chargers/AmpVConnect";

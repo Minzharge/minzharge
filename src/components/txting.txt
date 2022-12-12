@@ -1,0 +1,29 @@
+ <NavLink className='navClass mt-6' to={homePath} end style={mobNavStyle} onClick={() => setExpand(!expand)}>Home</NavLink>
+                        <div className=''>
+                        <button 
+                        onClick={mobileopen}>Buy Ev
+                          <i onClick={mobileopen} className={mob ? "fa fa-chevron-up text-white ml-1" : 
+            "fa fa-chevron-down ml-1 text-white"} aria-hidden="true"></i>
+                        </button>
+                      
+                        </div>
+                        {mob  ?(
+                      <>
+<NavLink className='navClass' to='/Chargers' style={mobNavStyle} 
+                        onClick={() => setExpand(!expand)}>Brands</NavLink>
+                        <NavLink className='navClass' to='/Chargers' style={mobNavStyle} 
+                        onClick={() => setExpand(!expand)}>Categories</NavLink>
+                       </>
+
+                       ): null}
+						<NavLink className='navClass' to='/Chargers' style={mobNavStyle} 
+                        onClick={() => setExpand(!expand)}>Chargers</NavLink>
+                        <NavLink className='navClass' to='/Blogs' style={mobNavStyle} 
+                        onClick={() => setExpand(!expand)}>Blogs</NavLink>
+                        <NavLink className='navClass' to='/Dealers' style={mobNavStyle}
+                         onClick={() => setExpand(!expand)}>Dealers</NavLink>
+                       
+                        <NavLink className='navClass' to='/contact' style={mobNavStyle} 
+                        onClick={() => setExpand(!expand)}>Call Us</NavLink>                       
+                      
+                     

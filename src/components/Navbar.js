@@ -17,17 +17,18 @@ function Navbar() {
     })
     
     const mobNavStyle = ({isActive}) => ({
-        color: isActive ? 'yellow' : 'white'
+        color: isActive ? 'yellow' : 'black'
     })
 
     const handleOpen = () => {
-        setExpand(!expand);
-    }
+setExpand(!expand)
+ }
     console.log('navbar', expand);
     const [buyev, setBuyev] = useState(false);
     const [chrge,setChrge]  = useState(false)
     const [mob,setMob] = useState(false)
-    const handleOpens = () => {
+    const [mobtwo, setMobtwo] = useState(false)
+        const handleOpens = () => {
         setBuyev(!buyev);
       
       };
@@ -36,6 +37,10 @@ function Navbar() {
     }
  const mobileopen = () =>{
     setMob(!mob)
+ 
+ }
+ const mobiletwo = () =>{
+  setMobtwo(!mobtwo)
  }
    
   return (
@@ -93,41 +98,107 @@ function Navbar() {
         <div className='flex md:hidden justify-center items-center p-4'>
                 {expand ? (<>
                     <FaTimes size={20} className='z-20 text-white'onClick={handleOpen}/>
-                    <div className={'absolute top-0 left-0 w-[75%] min-h-screen bg-black text-white  flex flex-col justify-center items-center text-3xl z-10'}>
-                     
-               <NavLink className='navClass mt-6' to={homePath} end style={mobNavStyle} onClick={() => setExpand(!expand)}>Home</NavLink>
-                        <div className=''>
-                        <button 
-                        onClick={mobileopen}>Buy Ev
-                          <i onClick={mobileopen} className={mob ? "fa fa-chevron-up text-white ml-1" : 
-            "fa fa-chevron-down ml-1 text-white"} aria-hidden="true"></i>
-                        </button>
-                      
-                        </div>
-                        {mob  ?(
-                      <>
-<NavLink className='navClass' to='/Chargers' style={mobNavStyle} 
-                        onClick={() => setExpand(!expand)}>Brands</NavLink>
-                        <NavLink className='navClass' to='/Chargers' style={mobNavStyle} 
-                        onClick={() => setExpand(!expand)}>Categories</NavLink>
-                       </>
+                    <div class="w-60 h-full shadow-md  top-0 left-0  bg-white px-1 absolute  text-3xl z-10 ">
+  <ul class="relative top-20">
+    <li class="relative">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis
+       whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out"
+        href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark"> <NavLink  to={homePath} end style={mobNavStyle} onClick={() => setExpand(!expand)}>Home</NavLink>
+        </a>
+    </li>
+    <hr class=""></hr>
 
-                       ): null}
-						<NavLink className='navClass' to='/Chargers' style={mobNavStyle} 
-                        onClick={() => setExpand(!expand)}>Chargers</NavLink>
-                        <NavLink className='navClass' to='/Blogs' style={mobNavStyle} 
-                        onClick={() => setExpand(!expand)}>Blogs</NavLink>
-                        <NavLink className='navClass' to='/Dealers' style={mobNavStyle}
-                         onClick={() => setExpand(!expand)}>Dealers</NavLink>
-                       
-                        <NavLink className='navClass' to='/contact' style={mobNavStyle} 
-                        onClick={() => setExpand(!expand)}>Call Us</NavLink>                       
-                      
-                     
-                    </div>
+    <li class="relative" id="sidenavEx1">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden
+       text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900
+        hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer"  onClick={mobileopen} >
+        <span>Buy Ev</span>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+        </svg>
+      </a>
+      {mob ? (
+      <ul class="relative">
+        <li class="relative">
+          <a href="#!" class="flex items-center text-xs py-4 pl-12 
+          pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded
+           hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" 
+           ><NavLink  to='/Chargers' style={mobNavStyle} 
+           onClick={() => setExpand(!expand)}>Brands</NavLink></a>
+        </li><hr class="mx-4"></hr>
+
+        <li class="relative">
+          <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis 
+          whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Category</a>
+        </li>
+      </ul>
+      ):null}
+    </li>
+    <hr class=""></hr>
+
+    <li class="relative" id="sidenavEx1">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden
+       text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900
+        hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer"  onClick={mobiletwo} >
+        <span>Chargers</span>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+        </svg>
+      </a>
+      {mobtwo ? (
+      <ul class="relative">
+        <li class="relative">
+          <a href="#!" class="flex items-center text-xs py-4 pl-12 
+          pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded
+           hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" 
+           ><NavLink  to='/Chargers' style={mobNavStyle} 
+           onClick={() => setExpand(!expand)}>Brands</NavLink></a>
+        </li><hr class="mx-4"></hr>
+
+        <li class="relative">
+          <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis 
+          whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100
+           transition duration-300 ease-in-out"><NavLink  to='/Chargers' style={mobNavStyle} 
+          onClick={() => setExpand(!expand)}>Categories</NavLink></a>
+        </li>
+      </ul>
+      ):null}
+    </li>
+    <hr class=""></hr>
+    <li class="relative">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap 
+      rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"
+       data-mdb-ripple="true" data-mdb-ripple-color="dark"> <NavLink  to='/Blogs' style={mobNavStyle} 
+       onClick={() => setExpand(!expand)}>Blogs</NavLink></a>
+    </li>
+    <hr class=""></hr>
+    <li class="relative">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap 
+      rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"
+       data-mdb-ripple="true" data-mdb-ripple-color="dark"><NavLink  to='/Dealers' style={mobNavStyle}
+       onClick={() => setExpand(!expand)}>Register with Minzharge</NavLink></a>
+    </li>
+    <hr class=""></hr>
+    <li class="relative">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap 
+      rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"
+       data-mdb-ripple="true" data-mdb-ripple-color="dark"><NavLink  to='/Dealers' style={mobNavStyle}
+       onClick={() => setExpand(!expand)}>Dealers</NavLink></a>
+    </li>
+    <hr class=""></hr>
+    <li class="relative">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap 
+      rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"
+       data-mdb-ripple="true" data-mdb-ripple-color="dark"> <NavLink className='text-gray-700' style={mobNavStyle}   to='/contact'
+       onClick={() => setExpand(!expand)}>Call Us</NavLink> </a>
+    </li>
+  </ul>
+</div>
+
+              
                     </>) : <FaAlignJustify size={20}className='z-20 text-black ' onClick={handleOpen}/>}
         </div>
-    </div>
+</div>
     </>
   )
 }

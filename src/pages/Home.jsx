@@ -181,7 +181,9 @@ $("#prev").hover(
       referrerpolicy="no-referrer">
     </script>
     <div ref={slideRef} className="w-full">
+    
       <div className="flex-row bg-slate-100  p-3.5  z-[-1]">
+      
         {/* extra div for space consuption in responsiveness */}
         <div className="md:w-1/2 sm:w-2/12 w-0"></div>
 
@@ -207,8 +209,7 @@ $("#prev").hover(
             </button>
           </div>
         </div>
-
-
+        
         {/* extra div for space consuption in responsiveness */}
         <div className="md:w-1/3 sm:w-2/12 w-0"></div>
       </div>
