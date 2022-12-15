@@ -1,18 +1,15 @@
 import React, { useContext,useState } from 'react'
-import {BsBatteryCharging} from 'react-icons/bs'
-import ProductCarousal from '../components/ProductCarousal';
-import ProductVariants from '../pages/ProductVariants';
-import { NavbarContext } from '../context/NavbarStatus';
+import ProductCarousal from '../../components/ProductCarousal';
+import { NavbarContext } from '../../context/NavbarStatus';
 const assetUrl = process.env.NODE_ENV === 'production' ? '/minzharge/assets/': '/minzharge/assets/';
 
 function AmpVConnect_AC()
 {
-  
-  const {expand} = useContext(NavbarContext)
-  const [pricehide, setPricehide] = useState('3.3kW')
-  const [clamp, setClamp] = useState(false)
-  const [power, setPower] = useState(false)
-  const [wheels, setWheels] = useState(false)
+const {expand} = useContext(NavbarContext)
+const [pricehide, setPricehide] = useState('3.3kW')
+const [clamp, setClamp] = useState(false)
+const [power, setPower] = useState(false)
+const [wheels, setWheels] = useState(false)
 const [dimensions, setDimensions] = useState(false)
 const [warranty, setWarranty] = useState(false)
 const [features, setFeatures] = useState(false)

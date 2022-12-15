@@ -88,35 +88,35 @@ function ProductBrands() {
                 <img src={assetUrl + "/products/90.png"} alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Rompus Plus</h6>
-                    <p className='text-red-500 font-bold'>$ 33,000</p>
+                    <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Bazinga'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="https://nexzu.in/wp-content/uploads/2022/06/right-scaled.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Bazinga</h6>
-                    <p className='text-red-500 font-bold'>$ 31,000</p>
+                    <p className='text-red-500 font-bold'>₹ 31,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Bazinga_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="https://nexzu.in/wp-content/uploads/2022/06/cross-1-scaled.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Bazinga Cargo</h6>
-                    <p className='text-red-500 font-bold'>$ 33,000</p>
+                    <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Roadlark'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src={assetUrl + "/products/91.png"} alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Roadlark</h6>
-                    <p className='text-red-500 font-bold'>$ 33,000</p>
+                    <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Roadlark_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="http://test.minzharge.com/img/Rompus_Black.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Roadlark Cargo</h6>
-                    <p className='text-red-500 font-bold'>$ 33,000</p>
+                    <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
 			

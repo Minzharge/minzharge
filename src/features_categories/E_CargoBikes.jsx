@@ -60,7 +60,7 @@ return (
                 <div className='p-3'>
                     <h6 className='font-extrabold text-lg'>AmpVConnect AC - 3.3 kW</h6>
 					<p className='text-inherit text-base'>AC Charger for Car, Bike and Auto</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Bazinga'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer'>
@@ -68,7 +68,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect AC - 7.3 kW</h6>
 					<p className='text-inherit text-base'>AC Charger for Car, Bike and Auto</p>
-                    <p className='font-extrabold text-xl'>$ 31,000</p>
+                    <p className='font-extrabold text-xl'>₹ 31,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Bazinga_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer'>
@@ -76,7 +76,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect AC - 11 kW</h6>
 					<p className='text-inherit text-base'>AC Charger for Car, Bike and Auto</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Roadlark'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer'>
@@ -84,7 +84,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect AC - 22 kW</h6>
 					<p className='text-inherit text-base'>AC Charger for Car, Bike and Auto</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Roadlark_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover: hover:shadow-2xl cursor-pointer'>
@@ -92,7 +92,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect DC 48V 20A</h6>
 					<p className='text-inherit text-base'>2 & 3 Wheeler DC Fast Charger</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Roadlark_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover: hover:shadow-2xl cursor-pointer'>
@@ -100,7 +100,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect DC 48V 40A</h6>
 					<p className='text-inherit text-base'>2 & 3 Wheeler DC Fast Charger</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Roadlark_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover: hover:shadow-2xl cursor-pointer'>
@@ -108,7 +108,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect DC - 15 kW</h6>
 					<p className='text-inherit text-base'>4 Wheeler DC Fast Charger</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Roadlark_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover: hover:shadow-2xl cursor-pointer'>
@@ -116,7 +116,7 @@ return (
                 <div className='p-3'>
                     <h6 className='text-lg font-extrabold'>AmpVConnect DC - 30 kW</h6>
 					<p className='text-inherit text-base'>4 Wheeler DC Fast Charger</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
         </div>

@@ -61,7 +61,7 @@ function ProductNexzuBrands() {
                 <div className='p-3'>
                     <h6 className='font-extrabold text-xl'>Rompus Plus</h6>
 					<p className='text-inherit text-base'>Electric Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Bazinga'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer'>
@@ -69,7 +69,7 @@ function ProductNexzuBrands() {
                 <div className='p-3'>
                     <h6 className='text-xl font-extrabold'>Bazinga</h6>
 					<p className='text-inherit text-base'>Electric Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 31,000</p>
+                    <p className='font-extrabold text-xl'>₹ 31,000</p>
                 </div>
             </Link>
                 
@@ -78,7 +78,7 @@ function ProductNexzuBrands() {
                 <div className='p-3'>
                     <h6 className='text-xl font-extrabold'>Roadlark</h6>
 					<p className='text-inherit text-base'>Electric Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Roadlark_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover: hover:shadow-2xl cursor-pointer'>
@@ -86,7 +86,7 @@ function ProductNexzuBrands() {
                 <div className='p-3'>
                     <h6 className='text-2xl font-extrabold'>Roadlark Cargo</h6>
 					<p className='text-inherit text-base'>Electric Cargo Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Bazinga_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer'>
@@ -94,7 +94,7 @@ function ProductNexzuBrands() {
                 <div className='p-3'>
                     <h6 className='text-xl font-extrabold'>Bazinga Cargo</h6>
 					<p className='text-inherit text-base'>Electric Cargo Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
         </div>

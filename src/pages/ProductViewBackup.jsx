@@ -86,7 +86,7 @@ function ProductView({data:open = false}) {
 
                 </div>
 
-                <h1 className='text-4xl text-green-600 mb-10'>$ 51,000 <sub className='text-xs text-black'>Avg Ex-showroom price</sub></h1>
+                <h1 className='text-4xl text-green-600 mb-10'>₹ 51,000 <sub className='text-xs text-black'>Avg Ex-showroom price</sub></h1>
                 <hr className='mt-1'/>
                 <div className=''>
                     <button className='bg-yellow-500 px-20 py-3 text-xl rounded text-white mt-8'>Get offers</button>

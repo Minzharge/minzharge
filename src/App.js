@@ -49,13 +49,18 @@ import Scooters from "./categories/Scooters"
 import ReactGA from 'react-ga';
 import 'tw-elements';
 //chargers
-import Chargers from "./pages/Chargers";
+import Chargers from "./pages/AMP_Connect_Chargers";
 import AmpVConnect from "./Chargers/AmpVConnect";
 import Delta from "./Chargers/Delta";
 import DCcharges from './Chargers/DC_charges';
 import EVportableCharges from './Chargers/portable_charges';
-import AmpVConnect_AC from "./Chargers/AmpVConnect_AC";
 
+// delta chargers
+import AC_mini_plus from './Chargers/Delta_chargers/AC_mini_plus';
+import DC15kW from './Chargers/Delta_chargers/DC_15kW';
+import DC25kW from './Chargers/Delta_chargers/DC_25kW';
+import DC30kW from './Chargers/Delta_chargers/DC_30kW';
+import DC50kW from './Chargers/Delta_chargers/DC_50kW';
 
 // import ProductView from "./categories/Scooters_Brand"
 // import ProductView from "./categories/Loaders_Brand"
@@ -154,12 +159,17 @@ const App = () => {
 					 
 					 {/* chargers */}
                      <Route path="Chargers" element={<Chargers/>}></Route>
-					 <Route path="Chargers/AmpVConnect_AC" element={<AmpVConnect_AC/>}></Route>
 					 <Route path="Chargers/AmpVConnect" element={<AmpVConnect/>}></Route>
 					 <Route path="Chargers/Delta" element={<Delta/>}></Route>
                      <Route path="Chargers/DC_charges" element={<DCcharges/>}></Route>
                      <Route path="Chargers/portable_charges" element={<EVportableCharges/>}></Route>
                        {/* PRODUCTS BRANDS */}
+                     { /*Delta chargers*/}
+                     <Route path="Chargers/AC Mini Plus AC type-2 7.4KW unit" element={<AC_mini_plus/>}></Route>
+                     <Route path="Chargers/Bharat Charger 15KW" element={<DC15kW/>}></Route>
+                     <Route path="Chargers/DELTA DC 25KW wall box charger Single gun" element={<DC25kW/>}></Route>
+                     <Route path="Chargers/DELTA DC 30 KW wall box charger Single gun" element={<DC30kW/>}></Route>
+                     <Route path="Chargers/DELTA DC 50KW wall box charger Single gun" element={<DC50kW/>}></Route>
 
                       {/* <Route path='brands/allbrands' element={<ProductNexzuBrands/>}  /> */}
                    

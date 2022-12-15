@@ -7,21 +7,21 @@ const featuredProducts = [
     image: "https://via.placeholder.com/240/771796",
     header1: "Front original",
     header2: "design cap",
-    price: "$49",
+    price: "₹49",
     description: "As well as being game-changers when it comes to techinal innovation, Front has some of the best selling cap in its locker"
   },
   {
     image: "https://via.placeholder.com/240/24f355",
     header1: "Front original2",
     header2: "design cap2",
-    price: "$59",
+    price: "₹59",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic esse sapiente, nisi deserunt sit fugiat quis facilis cumque libero quae in fuga distinctio qui! Sint vitae est non corporis!"
   },
   {
     image: "https://via.placeholder.com/240/92c951",
     header1: "Front original3",
     header2: "design cap3",
-    price: "$69",
+    price: "₹69",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eligendi ab quidem dolore corrupti? Libero, dicta sequi mollitia fugit beatae eos molestiae porro illo, iste corporis cumque assumenda dignissimos reprehenderit?"
   }
 ];

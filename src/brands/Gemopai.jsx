@@ -60,14 +60,14 @@ function ProductGemopaiBrands() {
                 <img src="https://gemopai.com/frontend/img/ryder/slide/ryder4.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Gemopai Ryder</h6>
-                    <p className='text-red-500 font-bold'>$ 33,000</p>
+                    <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link to={'/vehicle/gemopai_astrid_lite'}  target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="https://gemopai.com/frontend/img/astrid/slide/ast2.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Gemopai Astrid Lite</h6>
-                    <p className='text-red-500 font-bold'>$ 31,000</p>
+                    <p className='text-red-500 font-bold'>₹ 31,000</p>
                 </div>
             </Link>
              

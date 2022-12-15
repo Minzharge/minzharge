@@ -62,14 +62,14 @@ function ProductRithulforkBrands() {
                 <img src="https://i.postimg.cc/m2My8w3x/Bazinga-Cargo-1.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Nexu Rompus Plus</h6>
-                    <p className='text-red-500 font-bold'>$ 33,000</p>
+                    <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
                 <Link  to={'/vehicle/Nexzu_Rompus_Plus'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="https://i.postimg.cc/m2My8w3x/Bazinga-Cargo-1.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Rithul Fork</h6>
-                    <p className='text-red-500 font-bold'>$ 31,000</p>
+                    <p className='text-red-500 font-bold'>₹ 31,000</p>
                 </div>
             </Link>
                

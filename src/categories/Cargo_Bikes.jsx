@@ -77,7 +77,7 @@ function ProductDexpressBrands() {
                 <div className='p-3'>
                     <h6 className='text-2xl font-extrabold'>Roadlark Cargo</h6>
 					<p className='text-inherit text-base'>Electric Cargo Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
 			<Link  to={'/vehicle/Nexzu_Bazinga_Cargo'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer'>
@@ -85,7 +85,7 @@ function ProductDexpressBrands() {
                 <div className='p-3'>
                     <h6 className='text-xl font-extrabold'>Bazinga Cargo</h6>
 					<p className='text-inherit text-base'>Electric Cargo Cycle</p>
-                    <p className='font-extrabold text-xl'>$ 33,000</p>
+                    <p className='font-extrabold text-xl'>₹ 33,000</p>
                 </div>
             </Link>
            
