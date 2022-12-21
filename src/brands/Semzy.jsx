@@ -53,13 +53,16 @@ function ProductSemzyBrands() {
     ]
     return (
         <>
-            {pathname === "/features_brand/Semzy" ? null : <ProductsSubNav /> }
+            {pathname === "/features_brand/Semzy" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+            Semzy</div>  
+	          <hr className='mb-5'/></div>: <ProductsSubNav /> }
         <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/vehicle/Semzy_Kasa'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="https://www.bikes4sale.in/pictures/default/semzy-kasa/semzy-kasa-pic-1.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Semzy Kasa</h6>
+                    <p className='text-inherit text-base'>Electric Scooter</p>
                     <p className='text-red-500 font-bold'>₹ 68,500</p>
                 </div>
             </Link>
@@ -67,6 +70,7 @@ function ProductSemzyBrands() {
                 <img src="https://www.bikes4sale.in/pictures/default/semzy-kasa/semzy-kasa-640.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Semzy Kasa Smart</h6>
+                    <p className='text-inherit text-base'>Electric Scooter</p>
                     <p className='text-red-500 font-bold'>₹ 69,000</p>
                 </div>
             </Link>

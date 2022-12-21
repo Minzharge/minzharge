@@ -53,13 +53,16 @@ function ProductRithulforkBrands() {
     ]
     return (
         <>
-            {pathname === "/features_brand/Rithul" ? null : <ProductsSubNav /> }
+            {pathname === "/features_brand/Rithul" ?<div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+            Rithul</div>  
+	          <hr className='mb-5'/></div> : <ProductsSubNav /> }
         <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/vehicle/Nexzu_Rompus_Plus'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="http://test.minzharge.com/img/Rompus_Black.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Nexu Rompus Plus</h6>
+                    <p className='text-inherit text-base'>Electric Cycle</p>
                     <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
@@ -67,6 +70,7 @@ function ProductRithulforkBrands() {
                 <img src="http://test.minzharge.com/img/Rompus_Black.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Rithul Fork</h6>
+                    <p className='text-inherit text-base'>Electric Cycle</p>
                     <p className='text-red-500 font-bold'>₹ 31,000</p>
                 </div>
             </Link>

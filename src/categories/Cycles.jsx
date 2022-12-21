@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {useParams, Link, useLocation} from 'react-router-dom'
-import ProductsSubNav from '../pages/ProductsSubNav'
+import ProductCategorySubNav from '../pages/ProductCategorySubNav'
 
 function ProductNexzuBrands() {
     const {brand} = useParams();
@@ -53,8 +53,9 @@ function ProductNexzuBrands() {
     ]
     return (
         <>
-             <div className='pl-10 py-5 text-start font-black text-2xl'> Electric Cycles </div>  
-	          <hr className='mb-5'/>
+            {pathname === "/features_category/Cycles" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+     Electric Cycle    </div>  
+          <hr className='mb-5'/></div> : <ProductCategorySubNav /> }
         <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>  
             <Link  to={'/vehicle/Nexzu_Rompus_Plus'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer '>
                 <img src="https://i.postimg.cc/W1JGfJdF/Bazinga-1.jpg" alt="Product Image" className='rounded-t-xl'/>

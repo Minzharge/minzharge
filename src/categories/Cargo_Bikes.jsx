@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {useParams, Link, useLocation} from 'react-router-dom'
-import ProductsSubNav from '../pages/ProductsSubNav'
+import ProductCategorySubNav from '../pages/ProductCategorySubNav'
 
 
 const assetUrl = process.env.NODE_ENV === 'production' ? '/minzharge/assets/' : '/minzharge/assets/';
@@ -53,9 +53,10 @@ function ProductDexpressBrands() {
     }
     ]
     return (
-        <>
-            <div className='pl-10 py-5 text-start font-black text-2xl'> Electric Cargo Bikes </div>  
-	          <hr className='mb-5'/>
+        <> {pathname === "/features_category/ThreeWheeler" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+     Electric Three Wheeler  </div>  
+          <hr className='mb-5'/></div> : <ProductCategorySubNav /> }
+            
         <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/vehicle/Dexpress_Elite'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>

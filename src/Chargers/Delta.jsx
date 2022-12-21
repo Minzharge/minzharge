@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import {useParams, Link, useLocation} from 'react-router-dom'
+import Subnavbar from './Chagers_Brands/Brands_subnav'
 
-function AmpVConnect() {
+function Delta() {
     const {brand} = useParams();
     const {pathname}  = useLocation()
 
@@ -52,8 +53,11 @@ function AmpVConnect() {
     ]
     return (
         <>
-            <h1 className='px-10 py-5 text-lg text-gray-500'>DELTA - Chargers</h1>
-		  <hr className='mb-5'/>
+           {pathname === "/feature_chargers/Delta" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+        Delta - Charger
+            </div>  
+             <hr className='mb-5'/></div>
+	          : <Subnavbar /> }
         <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/Chargers/AC Mini Plus AC type-2 7.4KW unit'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer '>
@@ -130,4 +134,4 @@ function AmpVConnect() {
     )
 }
 
-export default AmpVConnect
+export default Delta

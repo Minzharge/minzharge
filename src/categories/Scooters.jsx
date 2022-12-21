@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
-import ProductsSubNav from '../pages/ProductsSubNav'
+import ProductCategorySubNav from '../pages/ProductCategorySubNav'
+
 const assetUrl = process.env.NODE_ENV === 'production' ? '/minzharge/assets/' : '/minzharge/assets/';
 
 
@@ -47,8 +48,9 @@ function ProductBattreBrands() {
     ]
     return (
         <>
-             <div className='pl-10 py-5 text-start font-black text-2xl'> Electric Scooters </div>  
-	          <hr className='mb-5'/>
+             {pathname === "/features_category/Scooters" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+     Electric Scooters    </div>  
+          <hr className='mb-5'/></div> : <ProductCategorySubNav /> }
         <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
                 <Link to={'/vehicle/BattReLoEv'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                     <img src={assetUrl + "/Elite/1.png"} alt="Product Image" className='rounded-t-xl' />

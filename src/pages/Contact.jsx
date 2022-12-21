@@ -22,7 +22,8 @@ return (
 function Contact() {
   const [clamp, setClamp] = useState(false)
   return (
-    <><div className="">
+    <>
+    <div className="">
 
      <div
   class="px-4 pt-12 mx-0 mt-0 mb-4 w-full text-3xl font-bold leading-[3rem] text-black md:text-5xl  md:px-0 md:pt-24 md:text-center text-center bg-cover h-screen bg-[url('https://img.freepik.com/premium-photo/web-contact-us-icons-blue-background-contact-us-cutomer-support-concept-copy-space-website-page-contact-us-web-banner-copy-space-blue-background_256259-1520.jpg?w=996')] bg-no-repeat "
@@ -35,7 +36,6 @@ function Contact() {
 <div className="mx-auto px-4 w-full">
               <div className="gap-6 flex">
                   <div className="col-md-12 md:flex-none md:w-full  md:w-full px-4 relative" style={{ marginTop: '35px' }}>
-                     
                       <p class=" mx-0 mt-4 mb-0 leading-10 text-xl	font-normal text-[#888] " > Although you’re here for a reason, we get it, you may have questions.Since we’re passionate about electric vehicles and we’re experts on the subject matter, we’re in a position to help you.We want to.From the bottom of our hearts.The more electric vehicles on the road, the better it is for everyone.
                       </p>
                   </div>

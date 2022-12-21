@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
-import {useParams, Link} from 'react-router-dom'
+import {useParams, Link,useLocation} from 'react-router-dom'
 
 const assetUrl = process.env.NODE_ENV === 'production' ? '/minzharge/assets/' : '/minzharge/assets/';
 
 function ProductBrands() {
     const {brand} = useParams();
+    const { pathname } = useLocation();
 
     /* useEffect(() => {
     //     if(brand == 'all') get all Products
@@ -53,7 +54,9 @@ function ProductBrands() {
     ]
     return (
         <>
-
+  {pathname === "/products-cat/all" ? <div className='pl-10 py-5 text-start font-black text-2xl'> 
+            </div>  
+	          : <ProductCategorySubNav /> }
         <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link to={'/vehicle/BattReLoEv'} target="_blank" className='p-b-5 bg-green-600 rounded-2xl hover:bg-green-600 hover:shadow-xl cursor-pointer'>

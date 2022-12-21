@@ -284,7 +284,7 @@ function DC_30kW() {
                       <tr className='w-full'>
                           <td className='w-3/6'>Protection 
 </td>
-                          <td className='w-3/6 text-right'>Over Voltage, Under Voltage, Over Current, Short Circuit, Surge Protection, Over
+                          <td className='w-3/6 text-right font-black'>Over Voltage, Under Voltage, Over Current, Short Circuit, Surge Protection, Over
 Temperature, Ground Fault, Residual Current</td>
                       </tr>
                      
@@ -295,7 +295,7 @@ Temperature, Ground Fault, Residual Current</td>
                   <tbody>
                   <tr className='w-full'>
                           <td className='w-3/6'>Charging Protocol </td>
-                          <td className='w-3/6 text-right'>OCPP 1.6J</td>
+                          <td className='w-3/6 text-right font-black'>OCPP 1.6J</td>
                       </tr>              
           </tbody>
                </table>
@@ -319,16 +319,16 @@ Temperature, Ground Fault, Residual Current</td>
 
 
 </td>
-                          <td className='w-3/6 text-right'> 7” TFT LCD with Touch Control</td>
+                          <td className='w-3/6 text-right font-black'> 7” TFT LCD with Touch Control</td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Buttons and Switch </td>
-                          <td className='w-3/6 text-right'>English</td>
+                          <td className='w-3/6 text-right font-black'>English</td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Key Switch 
 </td>
-                          <td className='w-3/6 text-right'>Reset Key, Emergency Stop (Mushroom Headed Red Color)</td>
+                          <td className='w-3/6 text-right font-black'>Reset Key, Emergency Stop (Mushroom Headed Red Color)</td>
                       </tr>
                              
                     
@@ -340,14 +340,14 @@ Temperature, Ground Fault, Residual Current</td>
                           <td className='w-3/6'>User Authentication
 
 </td>
-                          <td className='w-3/6 text-right'>  OTP, CMS authorization & RFID </td>
+                          <td className='w-3/6 text-right font-black'>  OTP, CMS authorization & RFID </td>
                       </tr>
                   <tr className='w-full'>
                           <td className='w-3/6'>Visual Indication 
 
 
 </td>
-                          <td className='w-3/6 text-right'>Mains, Charging Status, System Error </td>
+                          <td className='w-3/6 text-right font-black'>Mains, Charging Status, System Error </td>
                       </tr>
           </tbody>
                </table>
@@ -368,7 +368,7 @@ Temperature, Ground Fault, Residual Current</td>
                     <tr>
                           <td className='w-3/6'>Charger & Vehicle
 </td>
-                          <td className='w-3/6 text-right'> CAN Communication
+                          <td className='w-3/6 text-right font-black '> CAN Communication
 </td>
                       </tr>
                       <tr className='w-full'>
@@ -376,7 +376,7 @@ Temperature, Ground Fault, Residual Current</td>
 
  
 </td>
-                          <td className='w-3/6 text-right'>Protocol: OCPP 1.6J (Open Charge Point Protocol)
+                          <td className='w-3/6 text-right  font-black'>Protocol: OCPP 1.6J (Open Charge Point Protocol)
 Interface : Ethernet, 3G/4G
 </td>
                       </tr>
@@ -384,7 +384,7 @@ Interface : Ethernet, 3G/4G
                           <td className='w-3/6'>Ambient Temperature  
  
 </td>
-                          <td className='w-3/6 text-right'>Full Power: 0°C to 55°C, De-rated: 50°C to 55°C
+                          <td className='w-3/6 text-right  font-black'>Full Power: 0°C to 55°C, De-rated: 50°C to 55°C
 </td>
                       </tr>
                       
@@ -397,7 +397,7 @@ Interface : Ethernet, 3G/4G
                           <td className='w-3/6'>Storage Temperature 
 
 </td>
-                          <td className='w-3/6 text-right'>0°C to 70°C
+                          <td className='w-3/6 text-right font-black '>0°C to 70°C
 
 </td>
                       </tr>
@@ -406,7 +406,7 @@ Interface : Ethernet, 3G/4G
 
 
 </td>
-                          <td className='w-3/6 text-right'>&lt;2000 Mtr.
+                          <td className='w-3/6 text-right font-black '>&lt;2000 Mtr.
 
 </td>
                       </tr>
@@ -414,7 +414,7 @@ Interface : Ethernet, 3G/4G
                           <td className='w-3/6'>Humidity
 
 </td>
-                          <td className='w-3/6 text-right'>&lt;95%, non-condensing
+                          <td className='w-3/6 text-right font-black '>&lt;95%, non-condensing
 </td>
                       </tr>                 
           </tbody>
@@ -443,7 +443,7 @@ Interface : Ethernet, 3G/4G
                           <td className='w-3/6'>Enclosure Protection 
 
 </td>
-                          <td className='w-3/6 text-right'>IK 10
+                          <td className='w-3/6 text-right font-black '>IK 10
 </td>
                       </tr>
                       <tr className='w-full'>
@@ -452,7 +452,7 @@ Interface : Ethernet, 3G/4G
 
 
 </td>
-                          <td className='w-3/6 text-right'>Air Cooled</td>
+                          <td className='w-3/6 text-right font-black '>Air Cooled</td>
                       </tr>
                      
                   </tbody>
@@ -462,7 +462,7 @@ Interface : Ethernet, 3G/4G
                   <tr className='w-full'>
                           <td className='w-3/6'> Output Cable
 </td> 
-                          <td className='w-3/6 text-right'>  5 Mtr.
+                          <td className='w-3/6 text-right font-black '>  5 Mtr.
 </td>
                       </tr>
                       <tr className='w-full'>

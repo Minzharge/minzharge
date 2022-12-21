@@ -1,6 +1,8 @@
 import React, { useContext, useState} from 'react'
 import ProductVariants from '../pages/ProductVariants';
 import { NavbarContext } from '../context/NavbarStatus';
+import  MyModal from './MyModal'
+import  VariantForm from './VariantForm'
 import './style.css'
 
 const assetUrl = process.env.NODE_ENV === 'production' ? '/minzharge/assets/' : '/minzharge/assets/';
@@ -145,77 +147,90 @@ function ProductCarousal () {
   );
 }
 
-function BattReLoEv() {
-
-    const {expand} = useContext(NavbarContext)
-    const [pricehide, setPricehide] = useState('lead')
-    const [clamp, setClamp] = useState(false)
-    const [power, setPower] = useState(false)
-    const [wheels, setWheels] = useState(false)
-	const [dimensions, setDimensions] = useState(false)
-	const [warranty, setWarranty] = useState(false)
-	const [features, setFeatures] = useState(false)
-    const handlePriceHide = (event) => {
-        const getPrice = event.target.value;
-        setPricehide(getPrice)
-	}
-	
-	
-	 const [spechide, setSpechide] = useState('lead');
-	 
-	
-    const table_data = [{
-          name: "Batt:RE LO EV (48V / 26 AH)",
-          price: "₹ 74,450 ",
-          onRoad: "(Avg. Ex-Showroom price)",
-          offerLink: '#',
-          kms: "55 Kms, 45 Kmph, 60 kg, 3 Hrs"
-      },
-      {
-          name: "Batt:RE LO EV (60V / 28AH)",
-          price: "₹ 83,900 ",
-          onRoad: "(Avg. Ex-Showroom price)",
-          offerLink: '#',
-          kms: "65 Km, 45 Kmph, 60 kg, 4 Hrs"
-      },
-      {
-          name: "Batt:RE LO EV (60V / 42AH)",
-          price: "₹ 99,650",
-          onRoad: "(Avg. Ex-Showroom price)",
-          offerLink: '#',
-          kms: "90 Km, 45 Kmph, 60 kg, 5 Hrs"
-      },
-  ];
-  
-  const handleshowhide = (event) => {
-      const getSpec = event.target.value;
-      setSpechide(getSpec);
-  
+const baseOptions = [
+  {
+    label: "55 Km",
+    value: "₹ 74,450"
+  },
+  {
+    label: "65 Km",
+    value: "₹ 83,900"
+  },
+  {
+    label: "90 Km",
+    value: "₹ 99,650"
   }
-  return (
-    <div className='w-full'>
-      <div className='md:w-[80%] mx-auto grid md:grid-cols-2 gap-10 mt-5'>
-      <div className={expand ? 'hidden': 'p-2'}>
-          <ProductCarousal />
-        </div>
+];
 
-        <div className='md:p-5 text-center md:text-left'>
-            <h1 className='text-3xl'>Batt:RE one</h1>
-			<h1 className='py-2 text-lg text-gray-500'>Electric Scooter</h1>
-		  <hr className='mb-5'/>
-            <div className='mt-5 mb-5'>
-                {/* <label htmlFor="type"></label> */}
-                <select name="" id="type" className='w-[200px] p-3 border-b-2 border-black outline-none' onChange={handlePriceHide}>
-                    <option value="" disabled selected>Select Type </option>
-                    <option value="lead">55 Km</option>
-                    <option value="lithium">65 Km</option>
-					  <option value="lead1">90 Km</option>
-                      </select>
-            </div>
-               <div className="w-layout-grid specifications-grid">
+
+
+const Select = ({ options, onChange, value, disabledOptions = [] }) => (
+  <select onChange={onChange} value={value} className='w-[200px] p-3 border-b-2 border-black outline-none mb-8'>
+    <option disabled value="">
+      Select Type
+    </option>
+    {options.map((option, i) => (
+      <option 
+        key={option.value}
+        value={option.value}
+        id={option.label}
+    
+      >
+       
+        {option.label}
+      </option>
+    ))}
+  </select>
+);
+
+ function Works() {
+
+  const [pricehide, setPricehide] = useState('lead')
+
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  const [firstSelectValue, setFirstSelectValue] = useState("");
+
+  const [firstSelectLabel, setFirstSelectLabel] = useState("");
+
+  const [showMyModal, setShowMyModal] = useState(false);
+
+
+
+  const handleFirstSelectChange = (e) => {
+  const value = e.target.value;
+  const option = baseOptions.find((o) => o.value === value);
+  setSelectedOptions([...selectedOptions, option]);
+  setFirstSelectValue(option.value);
+  setFirstSelectLabel(option.label);
+
+  
+  };
+    const handleOnClose= () => setShowMyModal(false)
+
+  const [data, SetData]= useState({
+    title:"Batt:RE one",
+    
+  })
+
+  
+  //tried
+  return (
+    <div className="">
+      <Select className='w-[200px] p-3 border-b-2 border-black outline-none'
+        options={baseOptions}
+        onChange={handleFirstSelectChange}
+        value={firstSelectValue}
+        id={firstSelectLabel}
+        disabledOptions={selectedOptions}
+      />
+
+
+
+ <div className="w-layout-grid specifications-grid">
                             <div className="specification-container"> <img src={assetUrl + "/Key_highlights_icon/battery.png"} class="car-icons"/>
                                 <div>
-                                    <div className="car-specifications-titles">Battery</div>
+                                    <div className="car-specifications-titles">Battery1</div>
                                     <div>Li-ion</div>
                                 </div>
                             </div>
@@ -252,30 +267,105 @@ function BattReLoEv() {
                             </div>
                            
                         </div>
-                        {
-                        pricehide === 'lead' && (
-                            <div className='flex pb-7 justify-center md:justify-start sm:mt-5'>
-                                <h1 className='text-3xl text-[#40b322] font-[600]'>₹ 74,450</h1>
-                                <p className='ml-4 mt-4 text-xs' >[Avg Ex-showroom price]</p>
-                            </div>
-                        )}
+                        
+                        <div>
+        <div className='flex pb-7 justify-center md:justify-start sm:mt-5'>
+            <h1 className='text-3xl text-[#40b322] font-[600]'>{firstSelectValue}</h1>
+            <p className='ml-4 mt-4 text-xs' >[Avg Ex-showroom price]</p>
+        </div>
 
-                    {
-                        pricehide === 'lithium' && (
-                            <div className='flex pb-7 flex pb-7 justify-center md:justify-start sm:mt-5'>
-                                <h1 className='text-3xl text-[#40b322] font-[600]'>₹ 83,900</h1>
-                                <p className='ml-4 mt-4 text-xs' >[Avg Ex-showroom price]</p>
-                            </div>
-                        )}
-						{
-                        pricehide === 'lead1' && (
-                            <div className='flex pb-7 flex pb-7 justify-center md:justify-start sm:mt-5'>
-                                <h1 className='text-3xl text-[#40b322] font-[600]'>₹ 99,650</h1>
-                                <p className='ml-4 mt-4 text-xs' >[Avg Ex-showroom price]</p>
-                            </div>
-                        )}
+                                </div>
             <hr className='mb-5'/>
-            <button className='mb-5 text-sm font-bold bg-yellow-300 text-white px-20 py-1 rounded-md'>Get Offers</button>
+            <div>
+            <button 
+             onClick={() => setShowMyModal(true)}
+             className='mb-5 text-sm font-bold bg-yellow-300 text-white px-20 py-1 rounded-md'>Get Offers</button>
+             
+             </div>
+
+
+      
+       <div >
+      
+     
+       <MyModal onClose={handleOnClose} visible={showMyModal} state={{ data: data }} tit={data} value={firstSelectValue} label={firstSelectLabel} />
+    </div>
+    </div>
+   
+  );
+}
+function BattReLoEv() {
+
+    const {expand} = useContext(NavbarContext)
+    const [pricehide, setPricehide] = useState('lead')
+    const [clamp, setClamp] = useState(false)
+    const [power, setPower] = useState(false)
+    const [wheels, setWheels] = useState(false)
+	const [dimensions, setDimensions] = useState(false)
+	const [warranty, setWarranty] = useState(false)
+	const [features, setFeatures] = useState(false)
+    const [showMyModal, setShowMyModal] = useState(false);
+    const [selectedOptions, setSelectedOptionss] = useState([]);
+    const [firstSelectName, setFirstSelectName] = useState("");
+    const [selectedValue, setFirstSelectedValue] = useState("");
+
+  console.log(firstSelectName,selectedValue,"1st-ssss");
+
+	
+	
+	 const [spechide, setSpechide] = useState('lead');
+	 
+	
+    const table_data = [{
+          name: "Batt:RE LO EV (48V / 26 AH)",
+          price: "₹ 74,450 ",
+          onRoad: "(Avg. Ex-Showroom price)",
+          offerLink: '#',
+          kms: "55 Kms, 45 Kmph, 60 kg, 3 Hrs"
+      },
+      {
+          name: "Batt:RE LO EV (60V / 28AH)",
+          price: "₹ 83,900 ",
+          onRoad: "(Avg. Ex-Showroom price)",
+          offerLink: '#',
+          kms: "65 Km, 45 Kmph, 60 kg, 4 Hrs"
+      },
+      {
+          name: "Batt:RE LO EV (60V / 42AH)",
+          price: "₹ 99,650",
+          onRoad: "(Avg. Ex-Showroom price)",
+          offerLink: '#',
+          kms: "90 Km, 45 Kmph, 60 kg, 5 Hrs"
+      },
+  ];
+  
+  const handleshowhide = (event) => {
+      const getSpec = event.target.value;
+      setSpechide(getSpec);
+  
+  }
+  const handleOnClose= () => setShowMyModal(false)
+
+  const [data, SetData]= useState({
+    title:"Batt:RE LO EV ",
+    name:"2A"
+  })
+  return (
+    <div className='w-full'>
+      <div className='md:w-[80%] mx-auto grid md:grid-cols-2 gap-10 mt-5'>
+      <div className={expand ? 'hidden': 'p-2'}>
+          <ProductCarousal />
+        </div>
+
+        <div className='md:p-5 text-center md:text-left'>
+            <h1 className='text-3xl'>Batt:RE LO EV </h1>
+			<h1 className='py-2 text-lg text-gray-500'>Electric Scooter</h1>
+		  <hr className='mb-5'/>
+            <div className='mt-5 mb-5'>
+                <Works  />
+              
+            </div>
+            
         </div>
       </div>
       <div className='w-[80%] mx-auto mt-10'>
@@ -292,10 +382,25 @@ function BattReLoEv() {
             <tbody>
                 {table_data.map(res => <>
                     <tr className='border-b-2 p-8'>
-                        <td scope="row" className="py-5  xs:px-0 xss:pr-0">{res.name}</td>
+                        <td scope="row" className="py-5  xs:px-0 xss:pr-0" key={res.name}>{res.name}</td>
                         <td scope="row" className="py-5  xs:px-0 xss:pr-0">
                             <p><span className='text-black'>{res.price} </span>{res.onRoad}</p>
-                            <p className='mt-3'><a href={res.offerLink} target='_blank' className='text-blue-400'>Get Offers</a></p></td>
+                            <p className='mt-3'>
+                              
+                                    <div 
+                                
+                                value={res.name}
+                                res={table_data}
+                                target='_blank' className='text-blue-400' >
+                                <div 
+                                 onClick={() => setShowMyModal(true)}
+                                 res={table_data}>
+                                    Get Offers
+                                  </div>
+                                  <VariantForm onClose={handleOnClose} visible={showMyModal} state={{ data: data }} tit={table_data} tit1={res.name} value={firstSelectName}/> 
+                                  </div>
+                              
+                            </p></td>
                         <td scope="row" className="py-5 px-6">{res.kms}</td>
                     </tr>
                 </>)}

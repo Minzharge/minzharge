@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {useParams, Link, useLocation} from 'react-router-dom'
-import Subnavbar from './Chargers_Categories/Categories_subnav'
+import Subnavbar from './Categories_subnav'
 
-function DC_charges() {
+function AllChargerCategories() {
     const {pathname}  = useLocation()
     const product_data = [
         {
@@ -45,10 +45,8 @@ function DC_charges() {
     
   return (
     <>
-   {pathname === "/feature_chargers/DC_chargers" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
-        DC - Charger
+   {pathname === "/Charger-Categories/all" ? <div className='pl-10 py-5 text-start font-black text-2xl'> 
             </div>  
-             <hr className='mb-5'/></div>
 	          : <Subnavbar /> }
  <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
     
@@ -174,4 +172,4 @@ function DC_charges() {
   )
 }
 
-export default DC_charges
+export default AllChargerCategories

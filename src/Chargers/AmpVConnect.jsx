@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {useParams, Link, useLocation} from 'react-router-dom'
-import ChargerSubNav from '../pages/ChargerSubNav'
+import Subnavbar from './Chagers_Brands/Brands_subnav'
 
 function AmpVConnect() {
     const {brand} = useParams();
@@ -53,8 +53,11 @@ function AmpVConnect() {
     ]
     return (
         <>
-           <h1 className='px-10 py-5 text-lg text-gray-500'>AmpVConnect - Chargers</h1>
-		  <hr className='mb-5'/>
+       {pathname === "/feature_chargers/AmpVConnect" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+        AmpVconnect - Charger
+            </div>  
+             <hr className='mb-5'/></div>
+	          : <Subnavbar /> }
         <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/vehicle/Nexzu_Rompus_Plus'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer '>

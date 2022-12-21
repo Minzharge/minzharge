@@ -251,7 +251,7 @@ function DC_25kW() {
                       <tr className='w-full'>
                           <td className='w-3/6'>Protection 
 </td>
-                          <td className='w-3/6 text-right'>Over current, Under voltage, Over voltage, Residual current, Surge protection,
+                          <td className='w-3/6 text-right font-black '>Over current, Under voltage, Over voltage, Residual current, Surge protection,
 Short circuit, Over temperature, Ground fault</td>
                       </tr>
                  
@@ -279,17 +279,17 @@ Short circuit, Over temperature, Ground fault</td>
  
 
 </td>
-                          <td className='w-3/6 text-right'>2.7” OLED screen</td>
+                          <td className='w-3/6 text-right  font-black'>2.7” OLED screen</td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Language
 </td>
-                          <td className='w-3/6 text-right'> English (Other languages available upon request)</td>
+                          <td className='w-3/6 text-right font-black '> English (Other languages available upon request)</td>
                       </tr> 
                       <tr>
                           <td className='w-3/6'>Push Button
 </td>
-                          <td className='w-3/6 text-right'>Multi-functional buttons (LED light: Orange, Blue) /
+                          <td className='w-3/6 text-right font-black'>Multi-functional buttons (LED light: Orange, Blue) /
 Emergency stop button (Red)</td>
                       </tr>
 
@@ -301,14 +301,14 @@ Emergency stop button (Red)</td>
                   <tr className='w-full'>
                           <td className='w-3/6'>Charge Options
 </td>
-                          <td className='w-3/6 text-right'>Charge options to be provided upon request:
+                          <td className='w-3/6 text-right font-black'>Charge options to be provided upon request:
 Charge by duration, Charge by energy</td>
                       </tr>
                   <tr className='w-full'>
                           <td className='w-3/6'>User Authentication 
 
 </td>
-                          <td className='w-3/6 text-right'>ISO/IEC 14443 Type A/B RFID for user authentication</td>
+                          <td className='w-3/6 text-right font-black'>ISO/IEC 14443 Type A/B RFID for user authentication</td>
                       </tr>
           </tbody>
                </table>
@@ -331,7 +331,7 @@ Charge by duration, Charge by energy</td>
 
  
 </td>
-                          <td className='w-3/6 text-right'>Ethernet (standard); 3G (optional)
+                          <td className='w-3/6 text-right font-black'>Ethernet (standard); 3G (optional)
 
 </td>
                       </tr>
@@ -340,14 +340,14 @@ Charge by duration, Charge by energy</td>
 
  
 </td>
-                          <td className='w-3/6 text-right'>-30oC to +50oC (-22oF to +122oF)
+                          <td className='w-3/6 text-right font-black'>-30oC to +50oC (-22oF to +122oF)
 </td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Storage Temperature 
  
 </td>
-                          <td className='w-3/6 text-right'>-40oC to +85oc (-40oF to +185oF)
+                          <td className='w-3/6 text-right font-black'>-40oC to +85oc (-40oF to +185oF)
 </td>
                       </tr>
                       
@@ -361,7 +361,7 @@ Charge by duration, Charge by energy</td>
                           <td className='w-3/6'>Humidity
 
 </td>
-                          <td className='w-3/6 text-right'>&lt;	 95% relative humidity, non-condensing
+                          <td className='w-3/6 text-right font-black'>&lt;	 95% relative humidity, non-condensing
 
 </td>
                       </tr>
@@ -369,7 +369,7 @@ Charge by duration, Charge by energy</td>
                           <td className='w-3/6'>Altitude
 
 </td>
-                          <td className='w-3/6 text-right'> Up to 2,000 m (6,000 ft.)
+                          <td className='w-3/6 text-right font-black'> Up to 2,000 m (6,000 ft.)
 </td>
                       </tr>                 
           </tbody>
@@ -392,25 +392,25 @@ Charge by duration, Charge by energy</td>
                           <td className='w-3/6'>Ingress Protection
  
 </td>
-                          <td className='w-3/6 text-right'> IP55</td>
+                          <td className='w-3/6 text-right font-black'> IP55</td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Enclosure Protection 
 
 </td>
-                          <td className='w-3/6 text-right'>Ik10</td>
+                          <td className='w-3/6 text-right font-black'>Ik10</td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Cooling
 
 </td>
-                          <td className='w-3/6 text-right'>Forced air</td>
+                          <td className='w-3/6 text-right font-black'>Forced air</td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Charging Cable Length 
 
 </td>
-                          <td className='w-3/6 text-right'>4 m (13 ft.)
+                          <td className='w-3/6 text-right font-black'>4 m (13 ft.)
 </td>
                       </tr>
                      
@@ -421,21 +421,21 @@ Charge by duration, Charge by energy</td>
                   <tr className='w-full'>
                           <td className='w-3/6'>Dimension (WxHxD) / Weight 
 </td>
-                          <td className='w-3/6 text-right'> 680x430x230 mm (27 x 17 x 9 in.) 47kg (104 lb), excluding plug and cable
+                          <td className='w-3/6 text-right font-black'> 680x430x230 mm (27 x 17 x 9 in.) 47kg (104 lb), excluding plug and cable
 </td>
                       </tr>
                       <tr className='w-full'>
                           <td className='w-3/6'>Certificate
 
 </td>
-                          <td className='w-3/6 text-right'> CE
+                          <td className='w-3/6 text-right font-black'> CE
                           </td>
                       </tr>                   
                       <tr className='w-full'>
                           <td className='w-3/6'>Compliance
 
 </td>
-                          <td className='w-3/6 text-right'>IEC 61851-1 / IEC 61851-23
+                          <td className='w-3/6 text-right font-black'>IEC 61851-1 / IEC 61851-23
                           </td>
                       </tr>                   
           </tbody>

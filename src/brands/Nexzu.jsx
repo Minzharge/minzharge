@@ -53,9 +53,11 @@ function ProductNexzuBrands() {
     ]
     return (
         <>
-            {pathname === "/features_brand/Nexzu" ?  null : <ProductsSubNav />  }
+            {pathname === "/features_brand/Nexzu" ?  <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+            Nexzu</div>  
+	          <hr className='mb-5'/></div>: <ProductsSubNav />  }
 			 
-	          <hr className='mb-5'/>
+	        
         <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/vehicle/Nexzu_Rompus_Plus'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:hover:shadow-2xl cursor-pointer '>

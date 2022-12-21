@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
-import {useParams, Link} from 'react-router-dom'
-import ProductsSubNav from '../pages/ProductsSubNav'
+import {useParams, Link, useLocation} from 'react-router-dom'
+import ProductCategorySubNav from '../pages/ProductCategorySubNav'
 
 function ProductTaarkBrands() {
     const {brand} = useParams();
+    const {pathname}  = useLocation()
 
     /* useEffect(() => {
     //     if(brand == 'all') get all Products
@@ -52,8 +53,10 @@ function ProductTaarkBrands() {
     ]
     return (
         <>
- <div className='pl-10 py-5 text-start font-black text-2xl'> Electric Loaders </div>  
-	          <hr className='mb-5'/>
+	   {pathname === "/features_category/Loaders" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+     Electric Loaders    </div>  
+          <hr className='mb-5'/></div> : <ProductCategorySubNav /> }
+
         <div className='py-5 grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
             <Link to={'/vehicle/Nexzu_Rompus_Plus'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="http://test.minzharge.com/img/Rompus_Black.jpg" alt="Product Image" className='rounded-t-xl'/>

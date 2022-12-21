@@ -8,7 +8,7 @@ import AboutUs from "./AboutUs/AboutUs"
 import NotFound from './pages/NotFound'
 import ProductsSubNav from "./pages/ProductsSubNav"
 import ProductBrands from "./pages/ProductBrands"
-import CategorySubNav from "./pages/CategorySubNav"
+import CategorySubNav from "./pages/ProductCategorySubNav"
 import ChargerSubNav from "./pages/ChargerSubNav"
 import ProductCategory from "./pages/ProductCategory"
 import ProductView from "./pages/ProductView"
@@ -49,12 +49,13 @@ import Scooters from "./categories/Scooters"
 import ReactGA from 'react-ga';
 import 'tw-elements';
 //chargers
-import Chargers from "./pages/AMP_Connect_Chargers";
 import AmpVConnect from "./Chargers/AmpVConnect";
 import Delta from "./Chargers/Delta";
 import DCcharges from './Chargers/DC_charges';
 import EVportableCharges from './Chargers/portable_charges';
 
+import MyModal from "./vehicle/MyModal"
+import VariantForm from "./vehicle/VariantForm"
 // delta chargers
 import AC_mini_plus from './Chargers/Delta_chargers/AC_mini_plus';
 import DC15kW from './Chargers/Delta_chargers/DC_15kW';
@@ -81,10 +82,14 @@ import Privacy from "./details/privacyandpolicy";
 import Cookies from "./details/cookiesandpolicy";
 import Terms from "./details/termsandconditions";
 import Refund from "./details/refundandcancellationpolicy";
-
+import Brands_subnav from "./Chargers/Chagers_Brands/Brands_subnav";
+import AllChargerBrands from "./Chargers/Chagers_Brands/AllChargerBrands";
+import Categories_subnav from './Chargers/Chargers_Categories/Categories_subnav';
+import AllChargerCategories from "./Chargers/Chargers_Categories/AllChargerCategories";
+import AC_chargers from './Chargers/AC_charges'
 const App = () => {
     const [expand, setExpand] = useState(false)
-    const homePath = process.env.NODE_ENV === 'production' ? '/minzharge': '/';
+    const homePath = process.env.NODE_ENV === 'production' ?  '/':'/m';
     const tracking_id = 'UA-250178798-1'
     ReactGA.initialize(tracking_id)
 
@@ -93,13 +98,19 @@ const App = () => {
             <NavbarContext.Provider value={{expand, setExpand}}>
             <Navbar />
                 <Routes>
-                    <Route path={homePath} exact element={<Home />} />
+                    <Route path='/' exact element={<Home />} />
                     <Route path='works' element={<Works />} />
                     <Route path='products' element={<ProductsSubNav />}>
                         <Route path=':brand' element={<ProductBrands />} />
                     </Route>
                     <Route path='products-cat' element={<CategorySubNav />}>
                         <Route path=':category' element={<ProductCategory />} />
+                    </Route>
+                    <Route path='Charger-Brands' element={<Brands_subnav />}>
+                        <Route path=':brand' element={<AllChargerBrands />} />
+                    </Route>
+                    <Route path='Charger-Categories' element={<Categories_subnav />}>
+                        <Route path=':brand' element={<AllChargerCategories />} />
                     </Route>
 					<Route path='AboutUs' element={<AboutUs />} />
 					<Route path='Contact' element={<Contact />} />
@@ -150,20 +161,34 @@ const App = () => {
                      <Route path='features_brand/Semzy' element={<ProductSemzyBrands />} />
                      <Route path='features_brand/Battre' element={<ProductBattreBrands />} />  
 
-                     <Route path='categories/Cargo_Bikes' element={<Cargo_Bikes />} /> 
+                     <Route path='categories/ThreeWheeler' element={<Cargo_Bikes />} /> 
                      <Route path='categories/Cycles' element={<Cycles />} />  
                      <Route path='categories/Fork_Lifts' element={<Fork_Lifts />} />  
                      <Route path='categories/Loaders' element={<Loaders />} />  
                      <Route path='categories/Scooters' element={<Scooters />} />  
-                      
+
+                     <Route path='features_category/ThreeWheeler' element={<Cargo_Bikes />} /> 
+                     <Route path='features_category/Cycles' element={<Cycles />} />  
+                     <Route path='features_category/Fork_Lifts' element={<Fork_Lifts />} />  
+                     <Route path='features_category/Loaders' element={<Loaders />} />  
+                     <Route path='features_category/Scooters' element={<Scooters />} />  
+
 					 
 					 {/* chargers */}
-                     <Route path="Chargers" element={<Chargers/>}></Route>
 					 <Route path="Chargers/AmpVConnect" element={<AmpVConnect/>}></Route>
 					 <Route path="Chargers/Delta" element={<Delta/>}></Route>
-                     <Route path="Chargers/DC_charges" element={<DCcharges/>}></Route>
+					 <Route path="feature_chargers/AmpVConnect" element={<AmpVConnect/>}></Route>
+					 <Route path="feature_chargers/Delta" element={<Delta/>}></Route>
+
+                     <Route path="Chargers/DC_chargers" element={<DCcharges/>}></Route>
+                     <Route path="Chargers/AC_chargers" element={<AC_chargers/>}></Route>
+                     <Route path="features_chargers/DC_chargers" element={<DCcharges/>}></Route>
+                     <Route path="features_chargers/AC_chargers" element={<AC_chargers/>}></Route>
+
                      <Route path="Chargers/portable_charges" element={<EVportableCharges/>}></Route>
-                       {/* PRODUCTS BRANDS */}
+                       
+                      { /*categories*/}
+
                      { /*Delta chargers*/}
                      <Route path="Chargers/AC Mini Plus AC type-2 7.4KW unit" element={<AC_mini_plus/>}></Route>
                      <Route path="Chargers/Bharat Charger 15KW" element={<DC15kW/>}></Route>
@@ -181,13 +206,19 @@ const App = () => {
                      <Route path="details/cookiesandpolicy" element={<Cookies/>}></Route>
                      <Route path="details/termsandconditions" element={<Terms/>}></Route>
                      <Route path="details/refundandcancellationpolicy" element={<Refund/>}> </Route>
+
 				    </Routes>
 				
-				<BlogContextProvider>
+                    <BlogContextProvider> 
+
          <Routes>
-          <Route exact path="/min-blogs" element={<BlogsList />} />
+         <Route  path="min-blogs" element={<BlogsList />} />
+ 
+          <Route exact path="vehicle/MyModal" element={<MyModal />} />
+          <Route exact path="vehicle/VariantForm" element={<VariantForm />} />
          </Routes>
-       </BlogContextProvider>	               
+       </BlogContextProvider>	
+                  
                 <Footer />   
                 </NavbarContext.Provider>
         </Router>

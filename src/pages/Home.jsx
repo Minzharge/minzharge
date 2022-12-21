@@ -259,19 +259,23 @@ $("#prev").hover(
         </div>
       </div>
       <Categories />
-    </div><div class="mt-0 mr-auto mb-8 md:mr-[200px] xs:mr-0">
-        <div class="pl-10 pr-10 w-full relative mb-2 lg:pl-52">
-          <div class="mt-0 mb-6 font-semibold text-4xl mb-2 font-[Larsseit-Bold] text-[#1f3ca6]">
-            <div class="before:absolute  before:h-1 before:w-12 before:bg-[#1f3ca6] before:lg:mt-16 before:sm:mt-16 before:mt-24 ">
-              Current Blogs to Know
+    </div>
+    <div className='p-6 md:p-12'>
+
+    <h1 className='text-2xl font-bold text-center md:text-left'>BLOGS</h1>
+            <hr />
             </div>
+            <div class="relative   justify-items-end">
+        <div class="ml-32 text-right">
+          <div class="inline-block align-middle mb-4 font-bold text-xl text-[#1f3ca6] after:content-['_→'] after:mr-8 after:font-bold after:text-4xl">
+            <Link to='/min-blogs' target="blank">
+              view more
+            </Link>
           </div>
-          <div class="ml-8 text-base mt-16 mr-0 mb-2">
-            <p> Lorem Ipsum is simply dummy text of the printing and type </p>
-            <p> Lorem Ipsum is simply dummy text of the printing and type </p>
-          </div>
+
         </div>
-      </div></><div className={scroll.style} id="" class="flex flex-wrap">
+      </div></>      
+      </><div className={scroll.style} id="" class="flex flex-wrap">
 
         <div id="prev" style={scrollPrev}><img src="" width="40px" /></div>
         <div id="next" style={scrollNext}><img src="" width="40px" /></div>
@@ -678,15 +682,9 @@ $("#prev").hover(
 
           </div>
         </div>
-      </div></><div class="relative   justify-items-end">
-        <div class="ml-32 text-right">
-          <div class="inline-block align-middle mb-4 font-bold text-xl text-[#1f3ca6] after:content-['_→'] after:mr-8 after:font-bold after:text-4xl">
-            <Link to='/min-blogs' target="blank">
-              view more
-            </Link>
-          </div>
-
-        </div>
       </div></>
-	  );
+     
+	  ); 
+
+	   
 }

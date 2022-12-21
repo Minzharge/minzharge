@@ -56,10 +56,11 @@ function ProductBrands() {
 
         <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
-            <Link to={'/vehicle/BattReLoEv'} target="_blank" className='p-b-5 bg-green-600 rounded-2xl hover:bg-green-600 hover:shadow-xl cursor-pointer'>
+            <Link to={'/vehicle/BattReLoEv'} target="_blank" className='p-b-5 rounded-2xl hover:shadow-xl cursor-pointer'>
                     <img src="https://bd.gaadicdn.com/processedimages/battre-electric-mobility/oem/640X309/oem603e281e09a77.jpg?tr=w-300" alt="Product Image" className='rounded-t-xl' />
                     <div className='p-3'>
                         <h6 className='text-2xl text-bold'>BattRe LoEv</h6>
+                        <p className='text-inherit text-base'>Electric Scooter</p>
                         <p className='text-red-500 font-bold'>₹ 74,450</p>
                     </div>
                 </Link>
@@ -67,6 +68,7 @@ function ProductBrands() {
                    <img src={"https://bd.gaadicdn.com/processedimages/battre-electric-mobility/loev/640X309/loev603f36e673dae.jpg"} alt="Product Image" className='rounded-t-xl' />
                     <div className='p-3'>
                         <h6 className='text-2xl text-bold'>BattRe One</h6>
+                        <p className='text-inherit text-base'>Electric Scooter</p>
                         <p className='text-red-500 font-bold'>₹ 79,700</p>
                     </div>
                 </Link>
@@ -74,6 +76,7 @@ function ProductBrands() {
                 <img src="https://www.bikes4sale.in/pictures/default/semzy-kasa/semzy-kasa-pic-1.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Semzy Kasa</h6>
+                    <p className='text-inherit text-base'>Electric Scooter</p>
                     <p className='text-red-500 font-bold'>₹ 68,500</p>
                 </div>
             </Link>
@@ -81,6 +84,7 @@ function ProductBrands() {
                 <img src="https://www.bikes4sale.in/pictures/default/semzy-kasa/semzy-kasa-640.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Semzy Kasa Smart</h6>
+                    <p className='text-inherit text-base'>Electric Scooter</p>
                     <p className='text-red-500 font-bold'>₹ 69,000</p>
                 </div>
             </Link>
@@ -88,6 +92,7 @@ function ProductBrands() {
                 <img src={assetUrl + "/products/90.png"} alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Rompus Plus</h6>
+                    <p className='text-inherit text-base'>Electric Cycle</p>
                     <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
@@ -95,6 +100,7 @@ function ProductBrands() {
                 <img src="https://nexzu.in/wp-content/uploads/2022/06/right-scaled.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Bazinga</h6>
+                    <p className='text-inherit text-base'>Electric Cycle</p>
                     <p className='text-red-500 font-bold'>₹ 31,000</p>
                 </div>
             </Link>
@@ -102,6 +108,7 @@ function ProductBrands() {
                 <img src="https://nexzu.in/wp-content/uploads/2022/06/cross-1-scaled.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Bazinga Cargo</h6>
+                    <p className='text-inherit text-base'>Electric Cargo</p>
                     <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
@@ -109,6 +116,7 @@ function ProductBrands() {
                 <img src={assetUrl + "/products/91.png"} alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Roadlark</h6>
+                    <p className='text-inherit text-base'>Electric Cycle</p>
                     <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
@@ -116,6 +124,7 @@ function ProductBrands() {
                 <img src="http://test.minzharge.com/img/Rompus_Black.jpg" alt="Product Image" className='rounded-t-xl'/>
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Roadlark Cargo</h6>
+                    <p className='text-inherit text-base'>Electric Cargo</p>
                     <p className='text-red-500 font-bold'>₹ 33,000</p>
                 </div>
             </Link>
@@ -124,6 +133,7 @@ function ProductBrands() {
                 <img src={assetUrl + "/Elite/6.png"} alt="Product Image" className='rounded-t-xl' />
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Dexpress Elite</h6>
+                    <p className='text-inherit text-base'>Electric Cargo</p>
                     <p className='text-red-500 font-bold'>₹ 92,100</p>
                 </div>
             </Link>
@@ -131,6 +141,7 @@ function ProductBrands() {
                 <img src={assetUrl + "/Mettle/7.jpeg"} alt="Product Image" className='rounded-t-xl' />
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Dexpress Mettle</h6>
+                    <p className='text-inherit text-base'>Electric Cargo</p>
                     <p className='text-red-500 font-bold'>₹ 1,04,000</p>
                 </div>
             </Link>

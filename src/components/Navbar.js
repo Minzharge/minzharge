@@ -62,10 +62,10 @@ setExpand(!expand)
             {buyev ? (
         <ul className="menu">
           <li className="menu-item">
-          <NavLink className='navClass'onClick={handleOpens}  to='/Chargers'>Brands</NavLink>
+          <NavLink className='navClass'onClick={handleOpens}  to='/products/all'>Brands</NavLink>
           </li>
           <li className="menu-item">
-          <NavLink className='navClass'onClick={handleOpens}  to='/Blogs'>Categories</NavLink>
+          <NavLink className='navClass'onClick={handleOpens}  to='/products-cat/all'>Categories</NavLink>
           </li>
         </ul>
       ) : null}
@@ -76,16 +76,16 @@ setExpand(!expand)
             {chrge ? (
         <ul className="menu menu-second">
           <li className="menu-item">
-          <NavLink className='navClass'onClick={handlechargeopen}    to='/Chargers'>Brands</NavLink>
+          <NavLink className='navClass'onClick={handlechargeopen}    to='/Charger-Brands/all'>Brands</NavLink>
           </li>
           <li className="menu-item">
-          <NavLink className='navClass'onClick={handlechargeopen}  to='/Blogs'>Categories</NavLink>
+          <NavLink className='navClass'onClick={handlechargeopen}  to='/Charger-Categories/all'>Categories</NavLink>
           </li>
         </ul>
       ) : null}
     
 
-            <NavLink className='navClass' to='/Blogs' style={navStyle}>Blogs</NavLink>
+            <NavLink className='navClass' to='/min-blogs' style={navStyle}>Blogs</NavLink>
             <NavLink  className='navClass' to='/Dealers' style={navStyle}>Register with Min-Zharge</NavLink>
             <NavLink  className='navClass' to='/investors' style={navStyle}>Investors</NavLink>
             {/* <NavLink className='navClass' to='/products/all' style={navStyle}>Products</NavLink> */}

@@ -53,14 +53,18 @@ function ProductDexpressBrands() {
     }
     ]
     return (
-        <>
-            {pathname === "/features_brand/Dexpress" ? null : <ProductsSubNav /> }
+        <> 
+            {pathname === "/features_brand/Dexpress" ?<div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+            Dexpress</div>  
+	          <hr className='mb-5'/></div> : <ProductsSubNav /> }
+           
         <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
            
             <Link  to={'/vehicle/Dexpress_Elite'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                 <img src="https://i.postimg.cc/Z5rgDQvp/Mettle-4.webp" alt="Product Image" className='rounded-t-xl' />
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Dexpress Elite</h6>
+                    <p className='text-inherit text-base'>Electric Cargo</p>
                     <p className='text-red-500 font-bold'>₹ 92,100</p>
                 </div>
             </Link>
@@ -68,6 +72,7 @@ function ProductDexpressBrands() {
                 <img src="https://i.postimg.cc/15RrZYdD/Elite-2.webp" alt="Product Image" className='rounded-t-xl' />
                 <div className='p-3'>
                     <h6 className='text-2xl text-bold'>Dexpress Mettle</h6>
+                    <p className='text-inherit text-base'>Electric Cargo</p>
                     <p className='text-red-500 font-bold'>₹ 1,04,000</p>
                 </div>
             </Link>

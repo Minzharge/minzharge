@@ -47,14 +47,17 @@ function ProductBattreBrands() {
     ]
     return (
         <>
-            {pathname === "/features_brand/Battre" ? null : <ProductsSubNav /> }
-           
+            {pathname === "/features_brand/Battre" ? <div><div className='pl-10 py-5 text-start font-black text-2xl'> 
+            Battre</div>  
+	          <hr className='mb-5'/></div> : <ProductsSubNav /> }
+           <br />
             <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-5 md:justify-start justify-center px-8'>
 
                 <Link to={'/vehicle/BattReLoEv'} target="_blank" className='p-b-5 bg-gray-100 rounded-2xl hover:bg-gray-50 hover:shadow-xl cursor-pointer'>
                     <img src={assetUrl + "/Elite/1.png"} alt="Product Image" className='rounded-t-xl' />
                     <div className='p-3'>
                         <h6 className='text-2xl text-bold'>BattRe LoEv</h6>
+                        <p className='text-inherit text-base'>Electric Cargo</p>
                         <p className='text-red-500 font-bold'>₹ 74,450</p>
                     </div>
                 </Link>
@@ -62,6 +65,8 @@ function ProductBattreBrands() {
                    <img src={assetUrl + "/Elite/3.jpg"} alt="Product Image" className='rounded-t-xl' />
                     <div className='p-3'>
                         <h6 className='text-2xl text-bold'>BattRe One</h6>
+                        <p className='text-inherit text-base'>Electric Cargo</p>
+
                         <p className='text-red-500 font-bold'>₹ 79,700</p>
                     </div>
                 </Link>
